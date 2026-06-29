@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clarity Clicks — Local SEO that brings results · Johannesburg</title>
+<meta name="description" content="Clarity Clicks gets Johannesburg service businesses into the Google Maps 3-pack and the AI answers buyers trust. SEO measured in calls and booked jobs, not vanity rankings.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231C63E8'/%3E%3Cpath d='M20 11h-9v10h9M14 16h4' stroke='white' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --paper:#ffffff;--ink:#0F1C30;--ink-soft:rgba(15,28,48,.72);--ink-faint:rgba(15,28,48,.5);
+    --signal:#2978F0;--signal-bright:#4DA3FF;--signal-deep:#1C63E8;
+    --mist:#F5F7FA;--line:#E2E8F1;
+    --grad:linear-gradient(135deg,#4DA3FF 0%,#1C63E8 100%);
+    --font:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+    --mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,monospace;
+    --container:1180px;--pad-s:clamp(4.5rem,9vw,8.5rem);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{font-family:var(--font);font-weight:300;font-size:1.0625rem;line-height:1.6;color:var(--ink-soft);
+    background:var(--paper);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+  h1,h2,h3,h4{color:var(--ink);font-weight:300;letter-spacing:-.03em;line-height:1.06}
+  a{color:var(--signal-deep);text-decoration:none}
+  a:hover{text-decoration:underline}
+  ::selection{background:var(--signal);color:#fff}
+  :focus-visible{outline:2px solid var(--signal-deep);outline-offset:3px;border-radius:4px}
+  .container{max-width:var(--container);margin-inline:auto;padding-inline:1.5rem}
+  .eyebrow{font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--signal-deep);display:inline-block}
+  .lead{font-size:clamp(1.1rem,1.6vw,1.3rem);color:var(--ink-soft);font-weight:300}
+  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:.7rem 1rem;z-index:200}
+  .skip:focus{left:1rem;top:1rem}
+
+  .btn{display:inline-flex;align-items:center;gap:.55rem;font-family:var(--font);font-weight:500;font-size:.97rem;
+    letter-spacing:-.01em;padding:.9rem 1.5rem;border-radius:100px;border:1px solid transparent;cursor:pointer;
+    transition:transform .18s ease,box-shadow .18s ease,background .18s ease;white-space:nowrap}
+  .btn-primary{background:var(--signal-deep);color:#fff;box-shadow:0 1px 2px rgba(28,99,232,.35)}
+  .btn-primary:hover{background:#1655c9;text-decoration:none;transform:translateY(-2px);box-shadow:0 10px 24px -8px rgba(28,99,232,.6)}
+  .btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+  .btn-ghost:hover{background:var(--mist);text-decoration:none;border-color:#cdd7e5}
+  .btn-lg{padding:1.05rem 1.9rem;font-size:1.03rem}
+  .btn .arr{font-family:var(--mono);font-weight:400}
+  @media (prefers-reduced-motion:reduce){.btn:hover{transform:none}}
+
+  /* nav */
+  header.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);
+    border-bottom:1px solid transparent;transition:border-color .2s}
+  header.nav.scrolled{border-bottom-color:var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:.6rem;font-weight:500;font-size:1.1rem;letter-spacing:-.02em;color:var(--ink)}
+  .brand:hover{text-decoration:none}.brand .mark{width:30px;height:30px;border-radius:8px;flex:0 0 auto}
+  .brand b{font-weight:500}.brand .c2{color:var(--signal-deep)}
+  .nav-links{display:flex;align-items:center;gap:2rem;list-style:none}
+  .nav-links a{color:var(--ink-soft);font-size:.95rem;font-weight:400}
+  .nav-links a:hover{color:var(--ink);text-decoration:none}
+  .nav-cta{display:flex;align-items:center;gap:.75rem}
+  .nav-toggle{display:none;background:none;border:1px solid var(--line);border-radius:8px;padding:.5rem;cursor:pointer}
+  .nav-toggle svg{display:block}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;padding-top:clamp(2.5rem,6vw,5rem);padding-bottom:clamp(5rem,9vw,8rem)}
+  .hero .container{position:relative;z-index:2}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+  .hero h1{font-size:clamp(2.7rem,6.2vw,5rem);letter-spacing:-.045em;line-height:1.0;margin:1.4rem 0 0}
+  .hero h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.sub{margin-top:1.6rem;max-width:34ch;font-size:clamp(1.08rem,1.5vw,1.28rem)}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
+  .hero-trust{margin-top:1.7rem;font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;color:var(--ink-faint)}
+  .hero-trust span{color:var(--signal-deep)}
+
+  /* pixel skyline backdrop (shared) */
+  .mtn{position:absolute;left:0;bottom:0;width:100%;image-rendering:pixelated;image-rendering:crisp-edges;pointer-events:none;z-index:0;display:block}
+  .mtn-hero{height:clamp(190px,25vw,330px);opacity:.82}
+  .mtn-final{height:clamp(170px,22vw,300px);opacity:.8}
+  .mtn-foot{height:clamp(150px,20vw,260px);opacity:.9}
+
+  /* rank grid */
+  .rankwrap{position:relative;justify-self:center;width:100%;max-width:460px;aspect-ratio:1;z-index:2}
+  .rankwrap::before{content:"";position:absolute;inset:8% 8% 14% 8%;background:radial-gradient(circle at 42% 40%,rgba(41,120,240,.28),rgba(41,120,240,0) 62%);filter:blur(6px)}
+  .rankgrid{position:relative;width:100%;height:100%;display:block}
+  .rg-label{position:absolute;left:0;bottom:-2px;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+  .rg-label b{color:var(--signal-deep);font-weight:500}
+  .cell circle{transform-box:fill-box;transform-origin:center}
+  .rankgrid.animate .cell{opacity:0}
+  .rankgrid.animate .cell.in{opacity:1;transition:opacity .5s ease}
+  .rankgrid.animate .cell circle{transform:scale(.3);transition:transform .55s cubic-bezier(.2,.8,.2,1)}
+  .rankgrid.animate .cell.in circle{transform:scale(1)}
+  .pin-card{position:absolute;top:9%;right:-2%;background:#fff;border:1px solid var(--line);border-radius:12px;
+    padding:.7rem .85rem;box-shadow:0 16px 40px -18px rgba(15,28,48,.35);display:flex;gap:.6rem;align-items:center}
+  .pin-card .dot{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center;color:#fff;font-family:var(--mono);font-weight:500;font-size:.9rem;flex:0 0 auto}
+  .pin-card .pc-t{font-size:.78rem;color:var(--ink);font-weight:500;line-height:1.2}
+  .pin-card .pc-s{font-family:var(--mono);font-size:.66rem;color:var(--ink-faint);letter-spacing:.03em}
+
+  /* section */
+  .section{padding-block:var(--pad-s)}
+  .section.tight{padding-block:clamp(3rem,6vw,5rem)}
+  .sec-head{max-width:54ch}
+  .sec-head h2{font-size:clamp(2rem,4.2vw,3.3rem);margin-top:1rem}
+  .sec-head p{margin-top:1.1rem}
+
+  /* where-you-appear marquee */
+  .logos{background:#fff;border-block:1px solid var(--line);padding-block:2.2rem;overflow:hidden}
+  .logos .container{text-align:center}
+  .logos .eyebrow{display:block;color:var(--ink-faint)}
+  .marquee{margin-top:1.5rem;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+  .marquee-track{display:flex;align-items:center;gap:2.8rem;width:max-content;animation:scrollx 34s linear infinite}
+  .marquee:hover .marquee-track{animation-play-state:paused}
+  .plat{display:inline-flex;align-items:center;gap:.55rem;color:#8693a6;font-weight:500;font-size:1.02rem;white-space:nowrap;letter-spacing:-.01em}
+  .plat svg{width:19px;height:19px;flex:0 0 auto;opacity:.85}
+  @keyframes scrollx{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media (prefers-reduced-motion:reduce){.marquee{-webkit-mask-image:none;mask-image:none}.marquee-track{animation:none;flex-wrap:wrap;justify-content:center;width:auto}}
+
+  /* brand statement */
+  .pull{background:var(--ink);color:#fff}
+  .pull .container{padding-block:clamp(3.5rem,7vw,6rem)}
+  .pull .eyebrow{color:var(--signal-bright)}
+  .pull blockquote{font-size:clamp(1.5rem,3.2vw,2.5rem);font-weight:300;letter-spacing:-.03em;line-height:1.2;color:#fff;max-width:22ch;margin:1.2rem 0 0}
+  .pull blockquote .hl{color:var(--signal-bright)}
+  .pull cite{display:block;margin-top:1.6rem;font-family:var(--mono);font-size:.78rem;font-style:normal;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+
+  /* services */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:18px;overflow:hidden;margin-top:3rem}
+  .card{background:var(--paper);padding:2rem 1.8rem;transition:background .2s}
+  .card:hover{background:var(--mist)}
+  .card .ico{width:38px;height:38px;color:var(--signal-deep)}
+  .card h3{font-size:1.2rem;font-weight:500;letter-spacing:-.02em;margin:1.1rem 0 .5rem}
+  .card p{font-size:.96rem}
+  .card .k{font-family:var(--mono);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+
+  /* results: stats + cases */
+  .results{background:var(--mist)}
+  .stats-band{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:3rem;text-align:center}
+  .stat{padding:1.2rem}
+  .stat-top{font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
+  .stat-num{font-family:var(--mono);font-weight:500;font-size:clamp(2.9rem,7vw,4.8rem);letter-spacing:-.04em;line-height:1.05;margin:.35rem 0}
+  .stat-num span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat-bot{font-size:.97rem;color:var(--ink-soft)}
+  .stat-note{margin-top:1.4rem;font-family:var(--mono);font-size:.7rem;color:var(--ink-faint);text-align:center}
+  .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:2.6rem}
+  .res{background:#fff;border:1px solid var(--line);border-radius:16px;padding:1.7rem}
+  .res .metric{font-family:var(--mono);font-weight:500;font-size:clamp(1.8rem,3.4vw,2.3rem);letter-spacing:-.03em;color:var(--ink);line-height:1;display:flex;align-items:baseline;gap:.3rem}
+  .res .metric .up{color:var(--signal-deep);font-size:1.15rem}
+  .res .ctx{margin-top:.5rem;font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--signal-deep)}
+  .res p{margin-top:.8rem;font-size:.95rem}
+
+  /* timeline process */
+  .process-tl{position:relative;background:var(--ink);color:#fff;overflow:hidden}
+  .process-tl .sec-head h2{color:#fff}
+  .process-tl .eyebrow{color:var(--signal-bright)}
+  .timeline{position:relative;margin-top:3.5rem}
+  .timeline::before{content:"";position:absolute;left:50%;top:8px;bottom:8px;width:2px;background:rgba(255,255,255,.16);transform:translateX(-50%)}
+  .tl-item{position:relative;width:50%;padding-bottom:2.6rem}
+  .tl-item.l{left:0;padding-right:3rem;text-align:right}
+  .tl-item.r{left:50%;padding-left:3rem}
+  .tl-node{position:absolute;top:1.5rem;width:14px;height:14px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 4px var(--ink),0 0 0 6px rgba(41,120,240,.3);z-index:2}
+  .tl-item.l .tl-node{right:-7px}
+  .tl-item.r .tl-node{left:-7px}
+  .tl-card{display:inline-block;text-align:left;background:#fff;color:var(--ink);border-radius:16px;padding:1.6rem 1.7rem;box-shadow:0 24px 60px -28px rgba(0,0,0,.55)}
+  .tl-n{font-family:var(--mono);font-weight:500;color:var(--signal-deep);font-size:.85rem;margin-bottom:.5rem;letter-spacing:.05em}
+  .tl-card h3{font-size:1.16rem;font-weight:500;letter-spacing:-.02em;margin-bottom:.5rem}
+  .tl-card p{font-size:.94rem;color:var(--ink-soft)}
+
+  /* why */
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:2.6rem 3.4rem;margin-top:3rem}
+  .why{display:flex;gap:1.1rem}
+  .why .b{width:2.4rem;height:2.4rem;flex:0 0 auto;border-radius:9px;background:var(--mist);display:grid;place-items:center;color:var(--signal-deep)}
+  .why h3{font-size:1.18rem;font-weight:500;letter-spacing:-.02em;margin-bottom:.4rem}
+  .why p{font-size:.97rem}
+
+  /* promise */
+  .promise{background:var(--ink);color:#fff}
+  .promise .eyebrow{color:var(--signal-bright)}
+  .promise h2{color:#fff;font-size:clamp(2rem,4.4vw,3.4rem)}
+  .promise p{color:rgba(255,255,255,.74);max-width:60ch;margin-top:1.3rem;font-size:1.08rem}
+  .promise .fine{margin-top:1.1rem;font-family:var(--mono);font-size:.76rem;letter-spacing:.04em;color:rgba(255,255,255,.5);max-width:62ch}
+  .promise .cta{margin-top:2rem}
+
+  /* testimonials */
+  .tgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem;margin-top:3rem;max-width:900px}
+  .t{border:1px solid var(--line);border-radius:16px;padding:1.8rem;background:#fff}
+  .t .stars{color:var(--signal-deep);letter-spacing:.12em;font-size:.85rem}
+  .t blockquote{margin:.9rem 0 1.4rem;font-size:1.02rem;color:var(--ink);font-weight:300;line-height:1.55}
+  .t .who{display:flex;align-items:center;gap:.75rem}
+  .t .av{width:40px;height:40px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;font-family:var(--mono);font-weight:500;font-size:.85rem}
+  .t .who b{display:block;color:var(--ink);font-weight:500;font-size:.92rem}
+  .t .who span{font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;color:var(--ink-faint);text-transform:uppercase}
+
+  /* faq */
+  .faq{max-width:820px;margin-top:2.5rem}
+  details{border-top:1px solid var(--line)}
+  details:last-of-type{border-bottom:1px solid var(--line)}
+  summary{list-style:none;cursor:pointer;padding:1.4rem 2.5rem 1.4rem 0;position:relative;font-size:1.12rem;color:var(--ink);font-weight:400;letter-spacing:-.01em}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";position:absolute;right:.3rem;top:1.15rem;font-family:var(--mono);font-size:1.4rem;color:var(--signal-deep);transition:transform .2s}
+  details[open] summary::after{content:"–"}
+  details p{padding:0 0 1.5rem;font-size:1rem;max-width:68ch}
+
+  /* final */
+  .final{background:var(--mist);text-align:center;position:relative;overflow:hidden}
+  .final .container{position:relative;z-index:2}
+  .final h2{font-size:clamp(2.2rem,5vw,3.8rem)}
+  .final p{margin:1.2rem auto 0;max-width:46ch}
+  .final .cta{margin-top:2.3rem;display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
+
+  /* footer */
+  footer{position:relative;background:var(--ink);color:rgba(255,255,255,.7);overflow:hidden}
+  footer .container{position:relative;z-index:2;padding-block:clamp(3.5rem,6vw,5rem)}
+  footer .brand{color:#fff}footer .brand .c2{color:var(--signal-bright)}
+  .foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:2.5rem}
+  .foot-tag{margin-top:1rem;font-size:.95rem;max-width:34ch;color:rgba(255,255,255,.6)}
+  .foot-col h4{color:#fff;font-size:.78rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;font-weight:500;margin-bottom:1rem}
+  .foot-col a,.foot-col p{display:block;color:rgba(255,255,255,.65);font-size:.92rem;margin-bottom:.6rem}
+  .foot-col a:hover{color:#fff}
+  .foot-bottom{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;margin-top:3rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.12);font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:rgba(255,255,255,.45)}
+
+  /* responsive */
+  @media (max-width:920px){
+    .hero-grid{grid-template-columns:1fr;gap:3rem}
+    .rankwrap{max-width:360px}
+    .hero p.sub{max-width:46ch}
+    .cards,.res-grid{grid-template-columns:1fr 1fr}
+    .stats-band{grid-template-columns:1fr 1fr 1fr}
+    .tgrid{grid-template-columns:1fr 1fr}
+    .why-grid{grid-template-columns:1fr;gap:2rem}
+    .foot-top{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:760px){
+    .timeline::before{left:7px}
+    .tl-item{width:100%;left:0;padding:0 0 2rem 2.3rem;text-align:left}
+    .tl-item.l{padding-right:0;text-align:left}
+    .tl-item.r{left:0;padding-left:2.3rem}
+    .tl-item.l .tl-node,.tl-item.r .tl-node{left:0;right:auto}
+  }
+  @media (max-width:680px){
+    .nav-links,.nav-cta .btn-ghost{display:none}
+    .nav-toggle{display:inline-flex}
+    .nav-links.open{display:flex;position:absolute;top:72px;left:0;right:0;flex-direction:column;gap:0;background:#fff;border-bottom:1px solid var(--line);padding:.5rem 1.5rem 1.2rem}
+    .nav-links.open li{width:100%}
+    .nav-links.open a{display:block;padding:.85rem 0;border-bottom:1px solid var(--line)}
+    .cards,.res-grid,.stats-band,.tgrid{grid-template-columns:1fr}
+    .foot-top{grid-template-columns:1fr}
+    .pin-card{right:0}
+    .hero-cta .btn,.final .cta .btn{flex:1 1 auto;justify-content:center}
+  }
+</style>
+</head>
+<body>
+<a href="#main" class="skip">Skip to content</a>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="brand" aria-label="Clarity Clicks home">
+      <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1C63E8"/><path d="M20.5 11.2h-9v9.6h9M14 16h4.4" stroke="#fff" stroke-width="2.3" fill="none" stroke-linecap="round"/></svg>
+      <span><b>Clarity</b> <b class="c2">Clicks</b></span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="navlinks">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#why">Why us</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-ghost">WhatsApp</a>
+      <a href="#contact" class="btn btn-primary">Book free audit</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">
+        <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="#0F1C30" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero">
+  <canvas class="mtn mtn-hero" id="mtnHero" aria-hidden="true"></canvas>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Local SEO · Johannesburg</span>
+      <h1>Own the map in <span class="hl">your corner</span> of Joburg.</h1>
+      <p class="sub">We get local service businesses into the Google Maps 3-pack — and into the AI answers buyers now trust — so the next call comes to you, not the competitor who showed up first.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary btn-lg">Book your free audit <span class="arr">→</span></a>
+        <a href="#" class="btn btn-ghost btn-lg">WhatsApp us</a>
+      </div>
+      <p class="hero-trust">Month-to-month · <span>No lock-in</span> · POPIA-compliant · SEO measured in booked jobs</p>
+    </div>
+    <div class="rankwrap">
+      <svg class="rankgrid" id="rankgrid" viewBox="0 0 360 360" role="img" aria-label="Rank grid showing top-3 map positions across a service area">
+        <defs><linearGradient id="gblue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4DA3FF"/><stop offset="1" stop-color="#1C63E8"/></linearGradient></defs>
+      </svg>
+      <div class="pin-card" aria-hidden="true"><div class="dot">#1</div><div><div class="pc-t">Your business</div><div class="pc-s">★ 4.9 · Top 3 in 18 suburbs</div></div></div>
+      <span class="rg-label">Rank grid · <b>Greater JHB</b></span>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE YOU APPEAR (moving marquee) -->
+<div class="logos">
+  <div class="container"><span class="eyebrow">Get found everywhere your customers search</span></div>
+  <div class="marquee"><div class="marquee-track" id="marqueeTrack"></div></div>
+</div>
+
+<!-- BRAND STATEMENT -->
+<section class="pull">
+  <div class="container">
+    <span class="eyebrow">The whole job, in one line</span>
+    <blockquote>When your area searches for gas, a plumber or a sparky, <span class="hl">you should be the first name they see.</span></blockquote>
+    <cite>— SEO that brings results, across Greater Johannesburg</cite>
+  </div>
+</section>
+
+<!-- SHIFT -->
+<section class="section" id="shift">
+  <div class="container">
+    <div class="sec-head">
+      <span class="eyebrow">The shift</span>
+      <h2>Your customers stopped scrolling.</h2>
+      <p class="lead">Most "near me" searches never reach the blue links. People pick one of the three businesses on the map — or take the name ChatGPT and Google's AI hand them. If your profile is thin or a rival has more reviews, you're invisible at the exact moment someone's ready to buy.</p>
+      <p style="margin-top:1.1rem">We fix the foundations every search engine <em>and</em> AI assistant use to decide who to trust — then prove it on the rank grid, month after month.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section tight" id="services">
+  <div class="container">
+    <div class="sec-head"><span class="eyebrow">What we run</span><h2>Everything your local presence needs — handled.</h2></div>
+    <div class="cards">
+      <div class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.5"/></svg><div class="k">Foundation</div><h3>Google Business Profile</h3><p>The money page for local. Right categories, services, photos and posts — set up and optimised to rank.</p></div>
+      <div class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg><div class="k">On-site</div><h3>Local website</h3><p>Fast pages built around your real services and suburbs — the structure Google quietly rewards.</p></div>
+      <div class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.8 6.6 19.5l1.2-6L3.3 9.3l6.1-.7L12 3Z"/></svg><div class="k">Trust</div><h3>Reviews engine</h3><p>A simple WhatsApp system that turns finished jobs into a steady stream of 5-star reviews.</p></div>
+      <div class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 13a5 5 0 0 0 7 0l2-2a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-2 2a5 5 0 0 0 7 7l1-1"/></svg><div class="k">Consistency</div><h3>Citations &amp; NAP</h3><p>Your name, address and phone made identical everywhere, so Google stops doubting you exist.</p></div>
+      <div class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19V5M4 19h16M8 16l3-4 3 2 5-7"/></svg><div class="k">Demand</div><h3>Content &amp; landing pages</h3><p>Pages that match how locals actually search — suburb by suburb, service by service.</p></div>
+      <div class="card"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/></svg><div class="k">AI search</div><h3>AI visibility (GEO)</h3><p>Get named when customers ask ChatGPT, Gemini and Google's AI for a recommendation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULTS: stats + cases -->
+<!-- PLACEHOLDER figures — replace with real, verifiable results before publishing -->
+<section class="section results" id="results">
+  <div class="container">
+    <div class="sec-head"><span class="eyebrow">Proof</span><h2>Not traffic. The phone ringing.</h2></div>
+    <div class="stats-band">
+      <div class="stat"><div class="stat-top">Ranked over</div><div class="stat-num"><span data-to="40" data-suffix="+">40+</span></div><div class="stat-bot">local businesses</div></div>
+      <div class="stat"><div class="stat-top">Boosted calls by</div><div class="stat-num"><span data-to="250" data-suffix="%">250%</span></div><div class="stat-bot">on average</div></div>
+      <div class="stat"><div class="stat-top">Maintaining</div><div class="stat-num"><span data-to="4.9" data-dec="1" data-suffix="★">4.9★</span></div><div class="stat-bot">avg. client rating</div></div>
+    </div>
+    <p class="stat-note">* Example figures — replace with your real, verifiable numbers.</p>
+    <div class="res-grid">
+      <div class="res"><div class="metric"><span class="up">↑</span>3×</div><div class="ctx">Maps calls · Gas · Germiston</div><p>From page two to the local 3-pack across the service area in one quarter.</p></div>
+      <div class="res"><div class="metric">Same-day</div><div class="ctx">WhatsApp orders · Gas · Cape Town</div><p>"Gas near me" searches turn into orders that land straight on WhatsApp.</p></div>
+      <div class="res"><div class="metric"><span class="up">↑</span>4.9★</div><div class="ctx">Review rating · Service SMBs</div><p>A steady review cadence rebuilds trust — and lifts both rank and conversion.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS TIMELINE -->
+<section class="section process-tl" id="process">
+  <div class="container">
+    <div class="sec-head"><span class="eyebrow">How it works</span><h2>Your path to more calls.</h2></div>
+    <div class="timeline">
+      <div class="tl-item l"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">01 · Free audit &amp; fit call</div><h3>We see if we're a fit</h3><p>We run the numbers on your profile and map rank, and tell you straight whether we can help — no pressure, no jargon.</p></div></div>
+      <div class="tl-item r"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">02 · Onboarding</div><h3>We build your game plan</h3><p>We get access, lock your services and target suburbs, and map out exactly what we'll do — from Maps to website.</p></div></div>
+      <div class="tl-item l"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">03 · 360° local SEO</h3><p>Profile, website, reviews, citations, content. The unglamorous work that actually moves the map — no shortcuts.</p></div></div>
+      <div class="tl-item r"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">04 · Growth</div><h3>The calls roll in</h3><p>Monthly reports show rank, reviews and call volume — so you always know where your leads are coming from.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section tight" id="why" style="background:var(--mist)">
+  <div class="container">
+    <div class="sec-head"><span class="eyebrow">Why Clarity Clicks</span><h2>A partner, not another SEO vendor.</h2></div>
+    <div class="why-grid">
+      <div class="why"><div class="b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg></div><div><h3>Local and boutique</h3><p>We know SA search, SA suburbs, and how your customers phrase it. You work with us directly — not a junior three time-zones away.</p></div></div>
+      <div class="why"><div class="b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M20 6 9 17l-5-5"/></svg></div><div><h3>Done-for-you</h3><p>You run your business; we run your visibility. No dashboards to babysit, no homework.</p></div></div>
+      <div class="why"><div class="b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 19V5M4 19h16M8 15l3-3 3 2 4-6"/></svg></div><div><h3>Honest measurement</h3><p>We track map rank, reviews and calls — not vanity traffic. If a tactic doesn't bring leads, we drop it.</p></div></div>
+      <div class="why"><div class="b"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M18 6 6 18M8 6h10v10"/></svg></div><div><h3>No lock-in</h3><p>Month-to-month. We keep you by getting results, not by holding you to a contract.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="section promise" id="promise">
+  <div class="container">
+    <span class="eyebrow">Our promise</span>
+    <h2>Visible improvement in 90 days — or we keep working free.</h2>
+    <p>If your Google Business Profile visibility and call volume haven't improved within 90 days, we keep working at no extra charge until they do. You carry none of the risk while we earn your trust.</p>
+    <p class="fine">We'll never promise you a specific Google ranking — anyone who does is guessing. We promise the work, full transparency, and improvement you can see in your own numbers.</p>
+    <div class="cta"><a href="#contact" class="btn btn-primary btn-lg">Claim your free audit <span class="arr">→</span></a></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<!-- DRAFT quotes — confirm the wording with Emmanuel & Liberty (or use their actual words) before publishing -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="sec-head"><span class="eyebrow">In their words</span><h2>Gas businesses we've put on the map.</h2></div>
+    <div class="tgrid">
+      <div class="t"><div class="stars">★★★★★</div><blockquote>"People search 'gas near me' and now we're right there on the map. Same-day orders land straight on WhatsApp — the site does the selling for us."</blockquote><div class="who"><div class="av">RF</div><div><b>Emmanuel</b><span>Red Flame Gas · Cape Town</span></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><blockquote>"We show up across Germiston now — refills and installs both. More calls and more WhatsApp orders every week. Properly worth it."</blockquote><div class="who"><div class="av">MG</div><div><b>Liberty</b><span>MG Gas Company · Germiston</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section tight" id="faq" style="background:var(--mist)">
+  <div class="container">
+    <div class="sec-head"><span class="eyebrow">Questions</span><h2>What you're probably wondering.</h2></div>
+    <div class="faq">
+      <details open><summary>How long until I see results?</summary><p>Many local businesses see more Maps visibility and calls within 30–90 days, and the foundations compound from there. We give you a realistic timeline for <em>your</em> market up front — a competitive Joburg suburb takes longer than a quiet one.</p></details>
+      <details><summary>Will it work for my type of business?</summary><p>If customers find you through "near me" searches — gas, plumbers, electricians, geyser &amp; HVAC, locksmiths, cleaners, clinics, auto — yes. If we don't think we can move the needle, we'll tell you on the first call.</p></details>
+      <details><summary>What do you actually do each month?</summary><p>Optimise your Google Business Profile, build and clean your website around your services and suburbs, run a review system, fix your listings, and create local content — everything search engines and AI use to trust and recommend you.</p></details>
+      <details><summary>How do you measure success?</summary><p>Map rank in your suburbs, review growth, and above all calls and bookings — reported monthly. Not raw traffic that never picks up the phone.</p></details>
+      <details><summary>Contracts and pricing?</summary><p>Month-to-month, no lock-in. Pricing is scoped to your market on the free audit call — in Rand, with no surprises.</p></details>
+      <details><summary>Do you do Google Ads?</summary><p>We focus on organic local SEO — the lasting kind. (Google's Local Services Ads aren't available in South Africa anyway, so here the map is won organically.)</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="section final" id="contact">
+  <canvas class="mtn mtn-final" id="mtnFinal" aria-hidden="true"></canvas>
+  <div class="container">
+    <span class="eyebrow">Free audit · No obligation</span>
+    <h2>Let's get you to the top.</h2>
+    <p class="lead">We'll show you exactly where you're losing calls to competitors — and what it takes to win them back.</p>
+    <div class="cta">
+      <a href="#" class="btn btn-primary btn-lg">Book your free audit <span class="arr">→</span></a>
+      <a href="#" class="btn btn-ghost btn-lg">Chat on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <canvas class="mtn mtn-foot" id="mtnFoot" aria-hidden="true"></canvas>
+  <div class="container">
+    <div class="foot-top">
+      <div>
+        <a href="#" class="brand" aria-label="Clarity Clicks home">
+          <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#1C63E8"/><path d="M20.5 11.2h-9v9.6h9M14 16h4.4" stroke="#fff" stroke-width="2.3" fill="none" stroke-linecap="round"/></svg>
+          <span><b>Clarity</b> <b class="c2">Clicks</b></span>
+        </a>
+        <p class="foot-tag">SEO that brings results. Local search and AI visibility for Johannesburg service businesses.</p>
+      </div>
+      <div class="foot-col"><h4>Company</h4><a href="#services">Services</a><a href="#process">Process</a><a href="#why">Why us</a><a href="#faq">FAQ</a></div>
+      <div class="foot-col"><h4>Get in touch</h4><p>Serving Greater Johannesburg</p><a href="#">WhatsApp us</a><a href="#">hello@clarityclicks.co.za</a><a href="#contact">Book a free audit</a></div>
+    </div>
+    <div class="foot-bottom"><span>© 2026 Clarity Clicks. All rights reserved.</span><span><a href="#" style="color:inherit">Privacy &amp; POPIA</a></span></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+
+  /* sticky nav */
+  var nav=document.getElementById('nav');
+  var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>8);};
+  onScroll();window.addEventListener('scroll',onScroll,{passive:true});
+
+  /* mobile menu */
+  var t=document.getElementById('navToggle'),links=document.getElementById('navlinks');
+  if(t){t.addEventListener('click',function(){var open=links.classList.toggle('open');t.setAttribute('aria-expanded',open?'true':'false');});
+    links.addEventListener('click',function(e){if(e.target.tagName==='A'){links.classList.remove('open');t.setAttribute('aria-expanded','false');}});}
+
+  /* rank grid */
+  var svg=document.getElementById('rankgrid');
+  if(svg){
+    var N=6,S=60,R=22,off=30,cx=(N-1)/2,cy=(N-1)/2,maxD=Math.hypot(cx,cy),NS='http://www.w3.org/2000/svg';
+    var animate=!reduce; if(animate)svg.classList.add('animate');
+    var order=[];
+    for(var r=0;r<N;r++)for(var c=0;c<N;c++){order.push({r:r,c:c,d:Math.hypot(c-cx,r-cy)/maxD});}
+    order.forEach(function(o){
+      var x=off+o.c*S,y=off+o.r*S;
+      var g=document.createElementNS(NS,'g');g.setAttribute('class','cell');
+      var circ=document.createElementNS(NS,'circle');circ.setAttribute('cx',x);circ.setAttribute('cy',y);circ.setAttribute('r',R);
+      var core=o.d<0.34,strong=o.d<0.62,mid=o.d<0.86;
+      if(core){circ.setAttribute('fill','url(#gblue)');}
+      else if(strong){circ.setAttribute('fill','#2978F0');circ.setAttribute('fill-opacity','0.85');}
+      else if(mid){circ.setAttribute('fill','#9CC4FA');circ.setAttribute('fill-opacity','0.55');}
+      else{circ.setAttribute('fill','none');circ.setAttribute('stroke','#C9D6E8');circ.setAttribute('stroke-width','1.5');}
+      g.appendChild(circ);
+      if(o.d<0.62){var tx=document.createElementNS(NS,'text');tx.setAttribute('x',x);tx.setAttribute('y',y+4);tx.setAttribute('text-anchor','middle');
+        tx.setAttribute('font-family','Geist Mono,monospace');tx.setAttribute('font-size','13');tx.setAttribute('font-weight','500');
+        tx.setAttribute('fill',core?'#fff':'#1C63E8');tx.textContent=core?'1':(o.d<0.5?'2':'3');g.appendChild(tx);}
+      svg.appendChild(g);
+    });
+    if(animate){var cells=Array.prototype.slice.call(svg.querySelectorAll('.cell'));
+      cells.forEach(function(cell,i){setTimeout(function(){cell.classList.add('in');},250+order[i].d*900);});}
+  }
+
+  /* where-you-appear marquee */
+  (function(){
+    var track=document.getElementById('marqueeTrack');if(!track)return;
+    var pin='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg>';
+    var spark='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.7 6.1L20 10l-6.3 1.9L12 18l-1.7-6.1L4 10l6.3-1.9z"/></svg>';
+    var search='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>';
+    var plats=[[pin,'Google Maps'],[pin,'Apple Maps'],[pin,'Bing Places'],[pin,'Waze'],[spark,'ChatGPT'],[spark,'Gemini'],[search,'Google Search']];
+    var set=plats.map(function(p){return '<span class="plat">'+p[0]+p[1]+'</span>';}).join('');
+    track.innerHTML=set+set;
+  })();
+
+  /* count-up stats — re-animate every time they scroll into view */
+  function countUp(el){
+    var to=parseFloat(el.getAttribute('data-to')),suf=el.getAttribute('data-suffix')||'',dec=+(el.getAttribute('data-dec')||0);
+    if(reduce){el.textContent=(dec?to.toFixed(dec):to)+suf;return;}
+    var start=null,dur=1500;
+    function tick(ts){if(!start)start=ts;var p=Math.min((ts-start)/dur,1),e=1-Math.pow(1-p,3),v=to*e;
+      el.textContent=(dec?v.toFixed(dec):Math.round(v))+suf;if(p<1)requestAnimationFrame(tick);}
+    requestAnimationFrame(tick);
+  }
+  var stats=document.querySelectorAll('[data-to]');
+  if('IntersectionObserver' in window && !reduce){
+    var io=new IntersectionObserver(function(ents){ents.forEach(function(en){
+      if(en.isIntersecting){if(!en.target._run){en.target._run=true;countUp(en.target);}}
+      else{en.target._run=false;en.target.textContent='0';}
+    });},{threshold:.6});
+    stats.forEach(function(el){io.observe(el);});
+  }else{stats.forEach(countUp);}
+
+  /* pixel Joburg skyline + Nelson Mandela Bridge */
+  function mulberry(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+  function cApi(ctx){return {rect:function(x,y,w,h,col,a){ctx.globalAlpha=(a==null?1:a);ctx.fillStyle=col;ctx.fillRect(x|0,y|0,Math.max(1,w|0),Math.max(1,h|0));ctx.globalAlpha=1;}};}
+  function line(api,x0,y0,x1,y1,col,a,th){th=th||1;x0|=0;y0|=0;x1|=0;y1|=0;var dx=Math.abs(x1-x0),dy=Math.abs(y1-y0),sx=x0<x1?1:-1,sy=y0<y1?1:-1,err=dx-dy;
+    for(;;){api.rect(x0,y0,th,th,col,a);if(x0===x1&&y0===y1)break;var e2=2*err;if(e2>-dy){err-=dy;x0+=sx;}if(e2<dx){err+=dx;y0+=sy;}}}
+  function drawCity(api,W,H,opt){
+    var rnd=mulberry(opt.seed),P=opt.palette,ground=H*0.80,x,bw,bh,by,wy,wx;
+    for(x=0;x<W;){bw=12+(rnd()*18|0);bh=H*0.10+rnd()*H*0.20;by=ground-bh;api.rect(x,by,bw,ground-by,P[0],1);x+=bw+(rnd()*2|0);}
+    for(x=0;x<W;){bw=16+(rnd()*26|0);bh=H*0.16+rnd()*H*0.30;by=ground-bh;api.rect(x,by,bw,ground-by,P[1],1);
+      if(rnd()<0.30){var ah=4+(rnd()*10|0);api.rect(x+(bw/2|0),by-ah,2,ah,P[1],1);}
+      if(opt.win){for(wy=by+4;wy<ground-3;wy+=5)for(wx=x+3;wx<x+bw-2;wx+=4)if(rnd()<opt.win.d)api.rect(wx,wy,2,2,opt.win.c,opt.win.a);}
+      x+=bw+(rnd()*5|0);}
+    var cx=W*0.40|0,cby=ground-H*0.52|0;api.rect(cx,cby,28,ground-cby,P[1],1);
+    var hx=W*0.58|0,hby=ground-H*0.62|0;api.rect(hx,hby,9,ground-hby,P[1],1);api.rect(hx-5,hby+12,19,12,P[1],1);api.rect(hx+3,hby-24,2,24,P[1],1);
+    var pnx=W*0.69|0,pby=ground-H*0.48|0;api.rect(pnx,pby,22,ground-pby,P[1],1);api.rect(pnx-2,pby,26,6,P[1],1);
+    if(opt.win){[[cx+4,cby,24,ground],[pnx+3,pby+8,18,ground]].forEach(function(b){for(var yy=b[1]+4;yy<b[3]-4;yy+=6)for(var xx=b[0];xx<b[0]+b[2];xx+=5)if(rnd()<opt.win.d)api.rect(xx,yy,2,2,opt.win.c,opt.win.a);});}
+    [0,W*0.86].forEach(function(ex){var xx=ex,end=ex+W*0.14,b2,h2,y2;while(xx<end){b2=20+(rnd()*30|0);h2=H*0.10+rnd()*H*0.16;y2=ground-h2;api.rect(xx,y2,b2,ground-y2,P[2],1);xx+=b2+(rnd()*3|0);}});
+    var dY=H*0.70|0;api.rect(W*0.04|0,dY,(W*0.52)|0,3,P[3],1);
+    var m1=[W*0.20|0,H*0.20|0],m2=[W*0.31|0,H*0.12|0];
+    function fan(mx,mtop){for(var i=1;i<=6;i++){var dx=(W*0.14)*i/6;line(api,mx,mtop+3,(mx+dx)|0,dY,opt.cable,0.85,1);line(api,mx,mtop+3,(mx-dx)|0,dY,opt.cable,0.85,1);}}
+    fan(m1[0],m1[1]);fan(m2[0],m2[1]);
+    api.rect(m1[0]-2,m1[1],4,dY-m1[1],P[3],1);api.rect(m2[0]-2,m2[1],4,dY-m2[1],P[3],1);
+    api.rect(m1[0]-1,m1[1]-3,3,3,opt.cable,1);api.rect(m2[0]-1,m2[1]-3,3,3,opt.cable,1);
+    var mb=H*0.55|0,y;for(y=mb;y<H;y++){api.rect(0,y,W,1,opt.mistC,0.95*(y-mb)/(H-mb));}
+    for(var k=0;k<300;k++){var sx=rnd()*W|0,sy=(H*0.62+rnd()*H*0.38)|0;if(rnd()<0.5)api.rect(sx,sy,2,2,opt.mistC,0.5);}
+  }
+  function paintCity(cv,opt){if(!cv)return;cv.width=900;cv.height=340;drawCity(cApi(cv.getContext('2d')),900,340,opt);}
+  paintCity(document.getElementById('mtnHero'),{seed:7,palette:['#DCE7FB','#9DBCF2','#4F73C9','#33508C'],cable:'#7FA2E8',mistC:'#ffffff',win:null});
+  paintCity(document.getElementById('mtnFinal'),{seed:7,palette:['#E6EDFB','#A7C0F2','#5C84DF','#3A5798'],cable:'#88A6E9',mistC:'#F5F7FA',win:null});
+  paintCity(document.getElementById('mtnFoot'),{seed:7,palette:['#17263C','#22375A','#34538F','#486CB4'],cable:'#6E93E4',mistC:'#0F1C30',win:{c:'#FFD27A',a:0.85,d:0.10}});
+})();
+</script>
+</body>
+</html>
