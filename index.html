@@ -80,7 +80,10 @@
   /* rank grid */
   .rankwrap{position:relative;justify-self:center;width:100%;max-width:460px;aspect-ratio:1;z-index:2}
   .rankwrap::before{content:"";position:absolute;inset:8% 8% 14% 8%;background:radial-gradient(circle at 42% 40%,rgba(41,120,240,.28),rgba(41,120,240,0) 62%);filter:blur(6px)}
-  .rankgrid{position:relative;width:100%;height:100%;display:block}
+  .rg-map{position:absolute;inset:0;background:url('joburg-map.webp') center/cover no-repeat;
+    -webkit-mask-image:radial-gradient(circle at 50% 48%,#000 55%,transparent 76%);
+    mask-image:radial-gradient(circle at 50% 48%,#000 55%,transparent 76%);}
+  .rankgrid{position:relative;z-index:1;width:100%;height:100%;display:block}
   .rg-label{position:absolute;left:0;bottom:-2px;font-family:var(--mono);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint)}
   .rg-label b{color:var(--signal-deep);font-weight:500}
   .cell circle{transform-box:fill-box;transform-origin:center}
@@ -90,9 +93,11 @@
   .rankgrid.animate .cell.in circle{transform:scale(1)}
   .pin-card{position:absolute;top:9%;right:-2%;background:#fff;border:1px solid var(--line);border-radius:12px;
     padding:.7rem .85rem;box-shadow:0 16px 40px -18px rgba(15,28,48,.35);display:flex;gap:.6rem;align-items:center}
-  .pin-card .dot{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center;color:#fff;font-family:var(--mono);font-weight:500;font-size:.9rem;flex:0 0 auto;animation:pulsering 2.2s ease-out infinite}
-  @keyframes pulsering{0%{box-shadow:0 0 0 0 rgba(41,120,240,.55)}70%{box-shadow:0 0 0 13px rgba(41,120,240,0)}100%{box-shadow:0 0 0 0 rgba(41,120,240,0)}}
-  @media (prefers-reduced-motion:reduce){.pin-card .dot{animation:none}}
+  .pin-card .dot{width:34px;height:34px;border-radius:9px;background:var(--grad);display:grid;place-items:center;color:#fff;font-family:var(--mono);font-weight:500;font-size:.9rem;flex:0 0 auto;position:relative;animation:dotpulse 1.6s ease-in-out infinite}
+  .pin-card .dot::after{content:"";position:absolute;inset:-2px;border-radius:inherit;border:3px solid rgba(41,120,240,.9);opacity:0;animation:pulsering 1.6s ease-out infinite}
+  @keyframes dotpulse{0%,100%{transform:scale(1)}30%{transform:scale(1.14)}}
+  @keyframes pulsering{0%{transform:scale(1);opacity:.9}80%{transform:scale(2.1);opacity:0}100%{transform:scale(2.1);opacity:0}}
+  @media (prefers-reduced-motion:reduce){.pin-card .dot,.pin-card .dot::after{animation:none}}
   .pin-card .pc-t{font-size:.78rem;color:var(--ink);font-weight:500;line-height:1.2}
   .pin-card .pc-s{font-family:var(--mono);font-size:.66rem;color:var(--ink-faint);letter-spacing:.03em}
 
@@ -328,6 +333,7 @@
       <p class="hero-trust">Month&#8209;to&#8209;month · <span>No lock&#8209;in</span> · POPIA&#8209;compliant · SEO measured in booked jobs</p>
     </div>
     <div class="rankwrap">
+      <div class="rg-map" aria-hidden="true"></div>
       <svg class="rankgrid" id="rankgrid" viewBox="0 0 360 360" role="img" aria-label="Rank grid showing top-3 map positions across Gauteng">
         <defs><linearGradient id="gblue" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4DA3FF"/><stop offset="1" stop-color="#1C63E8"/></linearGradient></defs>
         <path d="M122,56 165,44 195,62 232,50 267,81 290,130 267,174 284,211 244,254 203,292 174,310 151,279 116,292 87,248 76,199 93,149 81,106 Z" fill="rgba(41,120,240,0.06)" stroke="rgba(28,99,232,0.26)" stroke-width="1.6" stroke-dasharray="2 5" stroke-linejoin="round"/>
