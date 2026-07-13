@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clarity Clicks · Local SEO that brings results · Johannesburg</title>
-<meta name="description" content="Clarity Clicks gets Johannesburg service businesses into the Google Maps 3-pack and the AI answers buyers trust. SEO measured in calls and booked jobs, not vanity rankings.">
+<meta name="description" content="We get local businesses more phone calls from Google. Clarity Clicks makes Johannesburg businesses appear in Google Maps and ChatGPT before their competitors — measured in calls and booked jobs, not vanity rankings.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -67,6 +67,12 @@
   .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
   .hero h1{font-size:clamp(2.7rem,6.2vw,5rem);font-weight:400;letter-spacing:-.045em;line-height:1.0;margin:1.4rem 0 0}
   .hero h1 .hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero h1 .google-colors .tw-w .tw-c:nth-child(1){color:#4285F4}  /* G */
+  .hero h1 .google-colors .tw-w .tw-c:nth-child(2){color:#EA4335}  /* o */
+  .hero h1 .google-colors .tw-w .tw-c:nth-child(3){color:#FBBC05}  /* o */
+  .hero h1 .google-colors .tw-w .tw-c:nth-child(4){color:#4285F4}  /* g */
+  .hero h1 .google-colors .tw-w .tw-c:nth-child(5){color:#34A853}  /* l */
+  .hero h1 .google-colors .tw-w .tw-c:nth-child(6){color:#EA4335}  /* e */
   .hero p.sub{margin-top:1.6rem;max-width:36ch;font-size:clamp(1.1rem,1.5vw,1.3rem);color:var(--ink);font-weight:400}
   .hero-cta{display:flex;flex-wrap:wrap;gap:.9rem;margin-top:2.2rem}
   .hero-trust{margin-top:1.7rem;font-family:var(--mono);font-size:.76rem;font-weight:500;letter-spacing:.03em;color:var(--ink-soft)}
@@ -255,6 +261,16 @@
   .foot-col a:hover{color:#fff}
   .foot-bottom{display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:center;margin-top:3rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.12);font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:rgba(255,255,255,.5)}
 
+  /* scroll-writing headings — headings type like search queries */
+  .tw-w{display:inline-block}
+  .tw-c{display:inline-block;position:relative;opacity:0}
+  .tw-c.tw-on{opacity:1}
+  .tw-c.tw-caret::after{content:"";position:absolute;right:-.14em;top:.07em;bottom:.04em;width:.07em;min-width:2px;border-radius:1px;background:var(--signal);animation:twblink 1.06s steps(1) infinite}
+  h1 .tw-hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1 .hl.tw-unclip{background:none;-webkit-background-clip:border-box;background-clip:border-box}
+  @keyframes twblink{0%,55%{opacity:1}56%,100%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){.tw-c{opacity:1}.tw-c.tw-caret::after{display:none}}
+
   /* responsive */
   @media (max-width:920px){
     .hero-grid{grid-template-columns:1fr;gap:3rem}
@@ -310,7 +326,7 @@
       </ul>
     </nav>
     <div class="nav-cta">
-      <a href="#" class="btn btn-ghost">WhatsApp</a>
+      <a href="https://wa.me/27837004777?text=Hi%20Clarity%20Clicks%2C%20I%27d%20like%20a%20free%20audit%20for%20my%20business." target="_blank" rel="noopener" class="btn btn-ghost">WhatsApp</a>
       <a href="#contact" class="btn btn-primary">Book free audit</a>
       <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navlinks">
         <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" stroke="#0F1C30" stroke-width="1.6" stroke-linecap="round"/></svg>
@@ -327,11 +343,11 @@
   <div class="container hero-grid">
     <div class="hero-copy">
       <span class="eyebrow">Local SEO · Johannesburg</span>
-      <h1>Own the map in <span class="hl">your corner</span> of Joburg.</h1>
-      <p class="sub">We get local service businesses into the Google Maps 3-pack, and into the AI answers buyers now trust, so the next call comes to you instead of the competitor who showed up first.</p>
+      <h1>We get local businesses <span class="hl">more phone calls</span> from <span class="google-colors">Google</span>.</h1>
+      <p class="sub">We make your business appear in Google Maps and in ChatGPT's answers — before your competitors — so the next call comes to you.</p>
       <div class="hero-cta">
         <a href="#contact" class="btn btn-primary btn-lg">Book your free audit <span class="arr">→</span></a>
-        <a href="#" class="btn btn-ghost btn-lg">WhatsApp us</a>
+        <a href="https://wa.me/27837004777?text=Hi%20Clarity%20Clicks%2C%20I%27d%20like%20a%20free%20audit%20for%20my%20business." target="_blank" rel="noopener" class="btn btn-ghost btn-lg">WhatsApp us</a>
       </div>
       <p class="hero-trust">Month&#8209;to&#8209;month · <span>No lock&#8209;in</span> · POPIA&#8209;compliant · SEO measured in booked jobs</p>
     </div>
@@ -375,16 +391,16 @@
     <!-- Illustrative Google Business Profile panel -->
     <div>
       <p class="gbp-cap">What an optimised profile looks like</p>
-      <div class="gbp" aria-label="Example Google Business Profile for Clarity Clicks">
+      <div class="gbp" aria-label="Example of an optimised Google Business Profile for a local gas supplier">
         <div class="gbp-photos">
           <div class="big"><svg class="mk" viewBox="0 0 40 40" aria-hidden="true"><defs><linearGradient id="lgG" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4DA3FF"/><stop offset="1" stop-color="#1C63E8"/></linearGradient></defs><path d="M21.9 10.2A12 12 0 1 0 21.9 29.8" fill="none" stroke="url(#lgG)" stroke-width="4.6" stroke-linecap="round"/><path d="M18.1 10.2A12 12 0 1 1 18.1 29.8" fill="none" stroke="#0F1C30" stroke-width="4.6" stroke-linecap="round"/><rect x="9" y="22" width="2.3" height="5" rx="1" fill="url(#lgG)"/><rect x="12.4" y="19" width="2.3" height="8" rx="1" fill="url(#lgG)"/><rect x="15.8" y="16" width="2.3" height="11" rx="1" fill="url(#lgG)"/></svg></div>
           <div class="sm"></div>
           <div class="map"><span class="grid-l"></span><svg viewBox="0 0 24 24" fill="#EA4335" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.4" fill="#fff"/></svg><span class="tag">Map</span></div>
         </div>
         <div class="gbp-body">
-          <div class="gbp-name">Clarity Clicks</div>
+          <div class="gbp-name">Your Business</div>
           <div class="gbp-rate"><b>5.0</b><span class="stars">★★★★★</span><span>· 47 Google reviews</span></div>
-          <div class="gbp-cat">SEO agency in Johannesburg · <span class="open">Open now</span></div>
+          <div class="gbp-cat">Gas cylinder supplier in Johannesburg · <span class="open">Open now</span></div>
           <div class="gbp-actions">
             <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>Website</a>
             <a href="#"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.3"/></svg>Directions</a>
@@ -416,21 +432,19 @@
   </div>
 </section>
 
-<!-- RESULTS: stats + cases -->
-<!-- PLACEHOLDER figures: replace with real, verifiable results before publishing -->
+<!-- RESULTS: stats + cases (real client results — Red Flame Gas & MG Gas, 2026-07) -->
 <section class="section results" id="results">
   <div class="container">
     <div class="sec-head"><span class="eyebrow">Proof</span><h2>Not traffic. The phone ringing.</h2></div>
     <div class="stats-band">
-      <div class="stat"><div class="stat-top">Ranked over</div><div class="stat-num"><span data-to="40" data-suffix="+">40+</span></div><div class="stat-bot">local businesses</div></div>
-      <div class="stat"><div class="stat-top">Boosted calls by</div><div class="stat-num"><span data-to="250" data-suffix="%">250%</span></div><div class="stat-bot">on average</div></div>
-      <div class="stat"><div class="stat-top">Maintaining</div><div class="stat-num"><span data-to="4.9" data-dec="1" data-suffix="★">4.9★</span></div><div class="stat-bot">avg. client rating</div></div>
+      <div class="stat"><div class="stat-top">Red Flame Gas now gets</div><div class="stat-num"><span data-to="5" data-suffix="/day">5/day</span></div><div class="stat-bot">new customers from local search</div></div>
+      <div class="stat"><div class="stat-top">Gas suppliers on the map</div><div class="stat-num"><span data-to="2" data-suffix="">2</span></div><div class="stat-bot">Cape Town &amp; Germiston — and counting</div></div>
+      <div class="stat"><div class="stat-top">Lock-in contracts</div><div class="stat-num"><span data-to="0" data-suffix="">0</span></div><div class="stat-bot">month to month — we earn our keep</div></div>
     </div>
-    <p class="stat-note">* Example figures. Replace with your real, verifiable numbers.</p>
     <div class="res-grid">
-      <div class="res"><div class="metric"><span class="up">↑</span>3×</div><div class="ctx">Maps calls · Gas · Germiston</div><p>From page two to the local 3-pack across the service area in one quarter.</p></div>
-      <div class="res"><div class="metric">Same&#8209;day</div><div class="ctx">WhatsApp orders · Gas · Cape Town</div><p>"Gas near me" searches turn into orders that land straight on WhatsApp.</p></div>
-      <div class="res"><div class="metric"><span class="up">↑</span>4.9★</div><div class="ctx">Review rating · Service SMBs</div><p>A steady review cadence rebuilds trust and lifts both rank and conversion.</p></div>
+      <div class="res"><div class="metric"><span class="up">↑</span>5/day</div><div class="ctx">New customers · Red Flame Gas · Cape Town</div><p>Around five new customers a day now find Red Flame through local search — orders land straight on WhatsApp.</p></div>
+      <div class="res"><div class="metric">Same&#8209;day</div><div class="ctx">WhatsApp orders · Red Flame Gas · Cape Town</div><p>"Gas near me" searches turn into same-day delivery orders, from map to WhatsApp to doorstep.</p></div>
+      <div class="res"><div class="metric">Every&nbsp;week</div><div class="ctx">More calls &amp; orders · MG Gas Company · Germiston</div><p>Refills, exchanges and installs — MG Gas gets found across Germiston and the East Rand, week after week.</p></div>
     </div>
   </div>
 </section>
@@ -440,7 +454,7 @@
   <div class="container">
     <div class="sec-head"><span class="eyebrow">How it works</span><h2>Your path to more calls.</h2></div>
     <div class="timeline">
-      <div class="tl-item l"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">01</div><h3>Free audit and fit call</h3><p>We run the numbers on your profile and map rank, and tell you straight whether we can help. No pressure, no jargon.</p></div></div>
+      <div class="tl-item l"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">01</div><h3>Free visibility audit and fit call</h3><p>We run the numbers on your profile, your map rank and your AI visibility — does ChatGPT even know you exist? — and tell you straight whether we can help. No pressure, no jargon.</p></div></div>
       <div class="tl-item r"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">02</div><h3>Onboarding and game plan</h3><p>We get access, lock your services and target suburbs, and map out exactly what we'll do, from Maps to website.</p></div></div>
       <div class="tl-item l"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">03</div><h3>360° local SEO</h3><p>Profile, website, reviews, citations, content. The unglamorous work that actually moves the map. No shortcuts.</p></div></div>
       <div class="tl-item r"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">04</div><h3>The calls roll in</h3><p>Monthly reports show rank, reviews and call volume, so you always know where your leads are coming from.</p></div></div>
@@ -478,8 +492,8 @@
   <div class="container">
     <div class="sec-head"><span class="eyebrow">In their words</span><h2>Gas businesses we've put on the map.</h2></div>
     <div class="tgrid">
-      <div class="t"><div class="stars">★★★★★</div><blockquote>"People search 'gas near me' and now we're right there on the map. Same-day orders land straight on WhatsApp, and the site does the selling for us."</blockquote><div class="who"><div class="av">RF</div><div><b>Emmanuel</b><span>Red Flame Gas · Cape Town</span></div></div></div>
-      <div class="t"><div class="stars">★★★★★</div><blockquote>"We show up across Germiston now, refills and installs both. More calls and more WhatsApp orders every week. Properly worth it."</blockquote><div class="who"><div class="av">MG</div><div><b>Liberty</b><span>MG Gas Company · Germiston</span></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><blockquote>"People search 'gas near me' and now we're right there on the map. Same-day orders land straight on WhatsApp, and the site does the selling for us."</blockquote><div class="who"><div class="av">RF</div><div><b>Emmanuel</b><span><a href="https://www.redflamegas.co.za" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">Red Flame Gas</a> · Cape Town</span></div></div></div>
+      <div class="t"><div class="stars">★★★★★</div><blockquote>"We show up across Germiston now, refills and installs both. More calls and more WhatsApp orders every week. Properly worth it."</blockquote><div class="who"><div class="av">MG</div><div><b>Liberty</b><span><a href="https://mg-gas.co.za" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline">MG Gas Company</a> · Germiston</span></div></div></div>
     </div>
   </div>
 </section>
@@ -502,12 +516,12 @@
 <!-- FINAL CTA -->
 <section class="section final" id="contact">
   <div class="container">
-    <span class="eyebrow">Free audit · No obligation</span>
+    <span class="eyebrow">Free visibility audit · Google · Maps · AI</span>
     <h2>Let's get you to the top.</h2>
-    <p class="lead">We'll show you exactly where you're losing calls to competitors, and what it takes to win them back.</p>
+    <p class="lead">We'll show you exactly how visible you are in Google, Google Maps and ChatGPT, where you're losing calls to competitors, and what it takes to win them back.</p>
     <div class="cta">
-      <a href="#" class="btn btn-primary btn-lg">Book your free audit <span class="arr">→</span></a>
-      <a href="#" class="btn btn-ghost btn-lg">Chat on WhatsApp</a>
+      <a href="https://wa.me/27837004777?text=Hi%20Clarity%20Clicks%2C%20I%27d%20like%20a%20free%20audit%20for%20my%20business." target="_blank" rel="noopener" class="btn btn-primary btn-lg">Book your free audit <span class="arr">→</span></a>
+      <a href="https://wa.me/27837004777" target="_blank" rel="noopener" class="btn btn-ghost btn-lg">Chat on WhatsApp</a>
     </div>
   </div>
 </section>
@@ -527,7 +541,7 @@
         <p class="foot-tag">SEO that brings results. Local search and AI visibility for Johannesburg service businesses.</p>
       </div>
       <div class="foot-col"><h4>Company</h4><a href="#services">Services</a><a href="#process">Process</a><a href="#why">Why us</a><a href="#faq">FAQ</a></div>
-      <div class="foot-col"><h4>Get in touch</h4><p>Serving Greater Johannesburg</p><a href="#">WhatsApp us</a><a href="#">hello@clarityclicks.co.za</a><a href="#contact">Book a free audit</a></div>
+      <div class="foot-col"><h4>Get in touch</h4><p>Serving Greater Johannesburg</p><a href="https://wa.me/27837004777?text=Hi%20Clarity%20Clicks%2C%20I%27d%20like%20a%20free%20audit%20for%20my%20business." target="_blank" rel="noopener">WhatsApp us</a><a href="tel:+27837004777">083 700 4777</a><a href="#contact">Book a free audit</a></div>
     </div>
     <div class="foot-bottom"><span>© 2026 Clarity Clicks. All rights reserved.</span><span><a href="#" style="color:inherit">Privacy &amp; POPIA</a></span></div>
   </div>
@@ -599,6 +613,81 @@
     });},{threshold:.6});
     stats.forEach(function(el){io.observe(el);});
   }else{stats.forEach(countUp);}
+
+  /* scroll-writing headings: hero types on load; section headings write as you scroll (scrubbed, reversible) */
+  (function(){
+    if(reduce)return;
+    function split(el){
+      var chars=[];
+      (function walk(node){
+        [].slice.call(node.childNodes).forEach(function(k){
+          if(k.nodeType===3){
+            var frag=document.createDocumentFragment();
+            k.nodeValue.split(/(\s+)/).forEach(function(part){
+              if(!part)return;
+              if(/^\s+$/.test(part)){frag.appendChild(document.createTextNode(part));return;}
+              var w=document.createElement('span');w.className='tw-w';
+              for(var i=0;i<part.length;i++){
+                var c=document.createElement('span');
+                c.className='tw-c'+(el.tagName==='H1'&&node.closest&&node.closest('.hl')?' tw-hl':'');
+                c.textContent=part.charAt(i);w.appendChild(c);chars.push(c);
+              }
+              frag.appendChild(w);
+            });
+            node.replaceChild(frag,k);
+          }else if(k.nodeType===1){walk(k);}
+        });
+      })(el);
+      if(el.tagName==='H1'){var hl=el.querySelector('.hl');if(hl)hl.classList.add('tw-unclip');}
+      return chars;
+    }
+    function setShown(t,n){
+      n=Math.max(0,Math.min(t.chars.length,n));
+      if(n===t.shown)return;
+      var i;
+      if(n>t.shown){for(i=t.shown;i<n;i++)t.chars[i].classList.add('tw-on');}
+      else{for(i=n;i<t.shown;i++)t.chars[i].classList.remove('tw-on');}
+      t.shown=n;
+      if(t.caretEl){t.caretEl.classList.remove('tw-caret');t.caretEl=null;}
+      if(n<t.chars.length){t.caretEl=t.chars[Math.max(0,n-1)];t.caretEl.classList.add('tw-caret');}
+    }
+    /* section headings + the brand statement, scroll-scrubbed */
+    var targets=[];
+    [].slice.call(document.querySelectorAll('main h2, .pull blockquote')).forEach(function(el){
+      var ch=split(el);
+      if(ch.length){var t={el:el,chars:ch,shown:0,caretEl:ch[0]};ch[0].classList.add('tw-caret');targets.push(t);}
+    });
+    function update(){
+      ticking=false;
+      var vh=window.innerHeight,start=vh*0.92,end=vh*0.55;
+      for(var i=0;i<targets.length;i++){
+        var t=targets[i],p=(start-t.el.getBoundingClientRect().top)/(start-end);
+        p=p<0?0:(p>1?1:p);
+        setShown(t,Math.round(p*t.chars.length));
+      }
+    }
+    var ticking=false;
+    function onScrollTw(){if(!ticking){ticking=true;requestAnimationFrame(update);}}
+    window.addEventListener('scroll',onScrollTw,{passive:true});
+    window.addEventListener('resize',onScrollTw,{passive:true});
+    update();
+    /* hero h1 types itself on load, like a query going into the box */
+    var h1=document.querySelector('.hero h1');
+    if(h1){
+      var hc=split(h1);
+      if(hc.length){
+        var ht={chars:hc,shown:0,caretEl:hc[0]};hc[0].classList.add('tw-caret');
+        var idx=0;
+        var typeNext=function(){
+          idx++;setShown(ht,idx);
+          if(idx<hc.length){setTimeout(typeNext,26+Math.random()*46);}
+          else{var last=hc[hc.length-1];last.classList.add('tw-caret');
+            setTimeout(function(){last.classList.remove('tw-caret');},1800);}
+        };
+        setTimeout(typeNext,420);
+      }
+    }
+  })();
 
   /* pixel Joburg skyline + Nelson Mandela Bridge (smooth silhouettes, two-mast) */
   function mulberry(s){return function(){s|=0;s=s+0x6D2B79F5|0;var t=Math.imul(s^s>>>15,1|s);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
