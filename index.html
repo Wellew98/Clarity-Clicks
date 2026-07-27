@@ -261,6 +261,15 @@
   .final p{margin:1.2rem auto 0;max-width:46ch}
   .final .cta{margin-top:2.3rem;display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap}
 
+  /* twinkle squares: light sections (faint 28px grid + random grey blink) */
+  .twinkle{position:relative}
+  .twinkle>.container,.twinkle>.marquee{position:relative;z-index:1}
+  .sqfield{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;
+    background-image:linear-gradient(to right,rgba(15,28,48,.04) 1px,transparent 1px),linear-gradient(to bottom,rgba(15,28,48,.04) 1px,transparent 1px);
+    background-size:28px 28px}
+  .sqcell{position:absolute;width:28px;height:28px;background:var(--ink);opacity:0;transition:opacity .9s ease;pointer-events:none}
+  @media (prefers-reduced-motion:reduce){.sqcell{display:none}}
+
   /* footer */
   footer{position:relative;background:var(--ink);color:rgba(255,255,255,.72);overflow:hidden}
   footer .container{position:relative;z-index:2;padding-block:clamp(3.5rem,6vw,5rem)}
@@ -350,6 +359,7 @@
 
 <!-- HERO -->
 <section class="hero">
+  <div class="sqfield" aria-hidden="true"></div>
   <canvas class="mtn mtn-hero" id="mtnHero" aria-hidden="true"></canvas>
   <div class="container hero-grid">
     <div class="hero-copy">
@@ -376,7 +386,8 @@
 </section>
 
 <!-- WHERE YOU APPEAR (moving marquee) -->
-<div class="logos">
+<div class="logos twinkle">
+  <div class="sqfield" aria-hidden="true"></div>
   <div class="container"><span class="eyebrow">Get found everywhere your customers search</span></div>
   <div class="marquee"><div class="marquee-track" id="marqueeTrack"></div></div>
 </div>
@@ -391,7 +402,8 @@
 </section>
 
 <!-- SHIFT + GBP EXAMPLE -->
-<section class="section" id="shift">
+<section class="section twinkle" id="shift">
+  <div class="sqfield" aria-hidden="true"></div>
   <div class="container shift-grid">
     <div class="sec-head">
       <span class="eyebrow">The shift</span>
@@ -429,7 +441,8 @@
 </section>
 
 <!-- SERVICES -->
-<section class="section tight" id="services">
+<section class="section tight twinkle" id="services">
+  <div class="sqfield" aria-hidden="true"></div>
   <div class="container">
     <div class="sec-head"><span class="eyebrow">What we run</span><h2>Everything your local presence needs, handled.</h2></div>
     <div class="cards">
@@ -444,7 +457,8 @@
 </section>
 
 <!-- RESULTS: stats + cases (real client results: Red Flame Gas & MG Gas, 2026-07) -->
-<section class="section results" id="results">
+<section class="section results twinkle" id="results">
+  <div class="sqfield" aria-hidden="true"></div>
   <div class="container">
     <div class="sec-head"><span class="eyebrow">Proof</span><h2>Not traffic. The phone ringing.</h2></div>
     <div class="stats-band">
@@ -474,7 +488,8 @@
 </section>
 
 <!-- WHY -->
-<section class="section tight" id="why" style="background:var(--mist)">
+<section class="section tight twinkle" id="why" style="background:var(--mist)">
+  <div class="sqfield" aria-hidden="true"></div>
   <div class="container">
     <div class="sec-head"><span class="eyebrow">Why us</span><h2>A partner, not another SEO vendor.</h2></div>
     <div class="why-grid">
@@ -499,7 +514,8 @@
 
 <!-- TESTIMONIALS -->
 <!-- DRAFT quotes: confirm wording with Emmanuel and Liberty (or use their actual words) before publishing -->
-<section class="section" id="reviews">
+<section class="section twinkle" id="reviews">
+  <div class="sqfield" aria-hidden="true"></div>
   <div class="container">
     <div class="sec-head"><span class="eyebrow">In their words</span><h2>Gas businesses we've put on the map.</h2></div>
     <div class="tgrid">
@@ -510,7 +526,8 @@
 </section>
 
 <!-- FAQ -->
-<section class="section tight" id="faq" style="background:var(--mist)">
+<section class="section tight twinkle" id="faq" style="background:var(--mist)">
+  <div class="sqfield" aria-hidden="true"></div>
   <div class="container">
     <div class="sec-head"><span class="eyebrow">Questions</span><h2>What you're probably wondering.</h2></div>
     <div class="faq">
@@ -525,7 +542,8 @@
 </section>
 
 <!-- FINAL CTA -->
-<section class="section final" id="contact">
+<section class="section final twinkle" id="contact">
+  <div class="sqfield" aria-hidden="true"></div>
   <div class="container">
     <span class="eyebrow">Free visibility audit · Google · Maps · AI</span>
     <h2>Let's get you to the top.</h2>
@@ -729,6 +747,36 @@
   function paintCity(cv,opt){if(!cv)return;cv.width=900;cv.height=340;drawCity(cApi(cv.getContext('2d')),900,340,opt);}
   paintCity(document.getElementById('mtnHero'),{seed:7,palette:['#DCE7FB','#9DBCF2','#4F73C9','#33508C'],cable:'#7FA2E8',mistC:'#ffffff',win:null});
   paintCity(document.getElementById('mtnFoot'),{seed:7,palette:['#17263C','#22375A','#34538F','#486CB4'],cable:'#6E93E4',mistC:'#0F1C30',win:{c:'#FFD27A',a:0.85,d:0.10}});
+})();
+</script>
+<script>
+(function(){
+  try{
+    if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var CELL=28,fields=[].slice.call(document.querySelectorAll('.sqfield'));
+    if(!fields.length)return;
+    function spawn(f){
+      var w=f.clientWidth,h=f.clientHeight;
+      if(w<CELL||h<CELL){setTimeout(function(){spawn(f);},1200);return;}
+      var cols=Math.floor(w/CELL),rows=Math.floor(h/CELL);
+      var c=document.createElement('span');
+      c.className='sqcell';
+      c.style.left=(Math.floor(Math.random()*cols)*CELL)+'px';
+      c.style.top=(Math.floor(Math.random()*rows)*CELL)+'px';
+      f.appendChild(c);
+      requestAnimationFrame(function(){c.style.opacity=(0.05+Math.random()*0.07).toFixed(3);});
+      setTimeout(function(){
+        c.style.opacity='0';
+        setTimeout(function(){if(c.parentNode)c.parentNode.removeChild(c);spawn(f);},950);
+      },500+Math.random()*1500);
+    }
+    fields.forEach(function(f){
+      var w=f.clientWidth,h=f.clientHeight;
+      var cols=Math.max(1,Math.floor(w/CELL)),rows=Math.max(1,Math.floor(h/CELL));
+      var active=Math.min(40,Math.max(3,Math.round(cols*rows/70)));
+      for(var i=0;i<active;i++)setTimeout(function(){spawn(f);},Math.random()*2500);
+    });
+  }catch(e){}
 })();
 </script>
 </body>
