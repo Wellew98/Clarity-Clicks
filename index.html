@@ -205,12 +205,19 @@
   .process-tl .container{position:relative;z-index:2}
   .process-tl .sec-head h2{color:#fff}
   .process-tl .eyebrow{color:var(--signal-bright)}
+  /* vertical animated timeline (process) */
   .timeline{position:relative;margin-top:3.5rem}
   .timeline::before{content:"";position:absolute;left:50%;top:8px;bottom:8px;width:2px;background:rgba(255,255,255,.16);transform:translateX(-50%)}
-  .tl-item{position:relative;width:50%;padding-bottom:2.6rem}
+  .tl-fill{position:absolute;left:50%;top:8px;width:2px;height:0;background:var(--signal-bright);transform:translateX(-50%);z-index:1;transition:height 1s cubic-bezier(.4,0,.2,1)}
+  .tl-item{position:relative;width:50%;padding-bottom:2.6rem;transition:opacity .8s ease}
+  .timeline.anim .tl-item{opacity:.28}
+  .timeline.anim .tl-item.on{opacity:1}
   .tl-item.l{left:0;padding-right:3rem;text-align:right}
   .tl-item.r{left:50%;padding-left:3rem}
-  .tl-node{position:absolute;top:1.5rem;width:14px;height:14px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 4px var(--ink),0 0 0 6px rgba(9,90,220,.3);z-index:2}
+  .tl-node{position:absolute;top:1.5rem;width:14px;height:14px;border-radius:50%;background:var(--signal);box-shadow:0 0 0 4px var(--ink),0 0 0 6px rgba(9,90,220,.3);z-index:2;transition:background .4s ease,transform .4s ease}
+  .timeline.anim .tl-node{background:rgba(255,255,255,.25);box-shadow:0 0 0 4px var(--ink)}
+  .timeline.anim .tl-item.on .tl-node{background:var(--signal-bright);box-shadow:0 0 0 4px var(--ink),0 0 0 6px rgba(9,90,220,.3)}
+  .timeline.anim .tl-item.now .tl-node{transform:scale(1.25)}
   .tl-item.l .tl-node{right:-7px}
   .tl-item.r .tl-node{left:-7px}
   .tl-card{display:inline-block;text-align:left;background:#fff;color:var(--ink);border-radius:16px;padding:1.6rem 1.7rem;box-shadow:0 24px 60px -28px rgba(0,0,0,.55)}
@@ -305,6 +312,7 @@
   }
   @media (max-width:760px){
     .timeline::before{left:7px}
+    .tl-fill{left:7px}
     .tl-item{width:100%;left:0;padding:0 0 2rem 2.3rem;text-align:left}
     .tl-item.l{padding-right:0;text-align:left}
     .tl-item.r{left:0;padding-left:2.3rem}
@@ -478,7 +486,8 @@
 <section class="section process-tl" id="process">
   <div class="container">
     <div class="sec-head"><span class="eyebrow">How it works</span><h2>Your path to more calls.</h2></div>
-    <div class="timeline">
+    <div class="timeline" id="flow">
+      <div class="tl-fill" id="flowFill" aria-hidden="true"></div>
       <div class="tl-item l"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">01</div><h3>Free visibility audit and fit call</h3><p>We run the numbers on your profile, your map rank and your AI visibility (does ChatGPT even know you exist?) and tell you straight whether we can help. No pressure, no jargon.</p></div></div>
       <div class="tl-item r"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">02</div><h3>Onboarding and game plan</h3><p>We get access, lock your services and target suburbs, and map out exactly what we'll do, from Maps to website.</p></div></div>
       <div class="tl-item l"><span class="tl-node"></span><div class="tl-card"><div class="tl-n">03</div><h3>360° local SEO</h3><p>Profile, website, reviews, citations, content. The unglamorous work that actually moves the map. No shortcuts.</p></div></div>
@@ -780,6 +789,27 @@
       for(var i=0;i<active;i++)setTimeout(function(){spawn(f);},Math.random()*2500);
     });
   }catch(e){}
+})();
+</script>
+<script>
+(function(){
+  var tl=document.getElementById('flow');if(!tl)return;
+  var items=[].slice.call(tl.querySelectorAll('.tl-item'));
+  var nodes=[].slice.call(tl.querySelectorAll('.tl-node'));
+  var fill=document.getElementById('flowFill');
+  var n=items.length;if(!n||!fill)return;
+  if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  tl.classList.add('anim');
+  function fillTo(k){var t=tl.getBoundingClientRect().top,nr=nodes[k].getBoundingClientRect();fill.style.height=Math.max(0,(nr.top-t)+nr.height/2-8)+'px';}
+  function setActive(k){for(var i=0;i<n;i++){items[i].classList.toggle('on',i<=k);items[i].classList.toggle('now',i===k);}fillTo(k);}
+  var idx=-1;
+  function advance(){
+    idx++;
+    if(idx>=n){setTimeout(function(){idx=-1;for(var i=0;i<n;i++){items[i].classList.remove('on','now');}fill.style.height='0px';setTimeout(advance,1600);},4500);return;}
+    setActive(idx);setTimeout(advance,3200);
+  }
+  setTimeout(advance,900);
+  window.addEventListener('resize',function(){if(idx>=0)fillTo(Math.min(idx,n-1));});
 })();
 </script>
 </body>
