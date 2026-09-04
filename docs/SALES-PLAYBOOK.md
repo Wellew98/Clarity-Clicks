@@ -12,6 +12,7 @@ This file grows as we work through the course. Each module gets its own section.
 1. [Features & Benefits](#module-1--features--benefits)
 2. [Cialdini's Principles of Influence](#module-2--cialdinis-principles-of-influence)
 3. [The elevator pitch](#module-3-the-elevator-pitch)
+4. [Objection handling](#module-4-objection-handling)
 
 ---
 
@@ -125,7 +126,7 @@ For each of the six service features: say the feature, then "…which means you�
 
 ---
 
-*Last updated: Module 3 — The Elevator Pitch.*
+*Last updated: Module 4, objection handling.*
 
 ## Module 2 — Cialdini's Principles of Influence
 
@@ -619,3 +620,191 @@ back to you. If they say "SEO" or "marketing," the pitch failed. If they say som
 - Does the 90-second version ever get used, or is the real sequence C, then A, then conversation?
   Worth tracking on live calls before putting more rehearsal into B.
 - The referral pitch (D) implies a referral channel we haven't built. Is that a workstream?
+
+## Module 4: Objection handling
+
+Course source: the Paragon Sales Solutions objection cheat sheet. Every objection you will ever
+hear reduces to five: no need, no money, no desire, no hurry, no trust.
+
+### 4.1 The five umbrella objections
+
+No need means the prospect does not require what you sell. The sheet says this is usually a
+qualification failure on your side, and that the right move is to walk away and find someone
+better qualified.
+
+No money means they cannot afford it, or say they cannot.
+
+No desire means they can see the point but do not want it. The sheet's distinction is useful:
+people resent paying for things they need and enjoy paying for things they want.
+
+No hurry means they will buy, but not today.
+
+No trust is the largest of the five, and the sheet makes the point that matters most: it hides
+behind the other four. Someone who does not trust you says "it's too expensive" or "let me think
+about it" because those are easier to say than "I don't believe you."
+
+### 4.2 Two places the sheet is wrong for our market
+
+The sheet says that if a prospect truly sees the benefits, "they will pay whatever it takes."
+That is not true for the people we sell to. A plumber with three vans and a bakkie payment can
+understand your value perfectly and still not have the cash this month. Treating every money
+objection as a failure to sell benefits harder will make you push where you should be scoping
+down or scheduling a follow-up. Some money objections are real budget constraints, and the
+correct response is a smaller starting scope rather than a better speech.
+
+The sheet also says to hurry the prospect and assure them they must buy now. Do not do this. It
+contradicts the scarcity rule in Module 2, and with an owner who has already been sold to badly
+it identifies you as the same kind of vendor. We have genuine urgency available and it does not
+need inventing: the map has three slots, review counts compound monthly, and the AI window is
+open now in a way it will not be in two years. Use the real version.
+
+### 4.3 Work out which objection you are actually facing
+
+The words rarely name the category. "It's too expensive" is a money objection about a third of
+the time and a trust or desire objection the rest.
+
+Two questions separate them. The first is the budget test: "If the price was half, would you
+start on Monday?" A yes means you have a real money objection and can scope down. A no means the
+money was never the issue, so ask what is.
+
+The second is the deferral test: "Is it the money, the timing, or are you not convinced this
+works?" Giving them three named exits makes it easy to tell you the truth, and most owners will.
+
+When you cannot tell, assume no trust. It is the most common and the most disguised.
+
+### 4.4 The objection map
+
+| What they say | Usually | Also check |
+|---|---|---|
+| "I get enough work already" | No need | No desire, or politeness |
+| "Business is slow, I can't spend right now" | No money | No trust |
+| "How much is it?" asked in the first minute | No desire | Screening you out |
+| "I've been burned by SEO before" | No trust | No desire |
+| "My nephew does my website" | No desire | Loyalty, and no trust in you |
+| "Let me think about it" | No hurry | No trust, almost always |
+| "Send me an email" | No hurry | Polite exit |
+| "Can you guarantee page one?" | No trust | Testing you |
+| "Does this work for my trade?" | No trust | Genuine question |
+| "I'll do it after December" | No hurry | No money |
+
+### 4.5 No need, and the qualification bar
+
+The sheet is right that no need is usually your fault for not qualifying, and that the answer is
+to leave. The site already promises we will tell people straight when we cannot help, so we need
+an actual bar rather than a good intention.
+
+Proposed disqualifiers, for sign-off:
+
+- Customers do not find them through local search. A wholesaler selling to three long-standing
+  trade accounts has no map problem to fix.
+- They serve nowhere in particular. Someone shipping nationally is running a different kind of
+  search problem than the one we solve.
+- They cannot answer the phone or WhatsApp during trading hours. More calls into an unanswered
+  phone is not a result, and we will get blamed for it.
+- Their reviews are genuinely bad, not merely few. Ranking a business people dislike accelerates
+  the complaints and ends with a churned client.
+- They want a guaranteed position and will not accept any other framing.
+
+Saying this out loud is worth more than the deal you lose: "Honestly, I don't think we're your
+problem. Your customers aren't finding you on Google, they're coming from word of mouth. I'd
+rather tell you that than take your money." An owner who hears that remembers you, and they know
+other owners.
+
+### 4.6 No money
+
+First find out whether it is real, using the budget test above.
+
+When it is real, scope down rather than discount. Dropping the price teaches them the first
+number was invented, and it makes the next negotiation worse. Starting with the Google Business
+Profile and the review system alone is a smaller scope, and those two do most of the early
+lifting anyway. Say that plainly: "Then let's start with the profile and reviews. It's the
+cheapest part and it's what moves the map first. Add the rest when the calls are paying for it."
+
+The second move is to convert price into jobs. Ask what an average job is worth to them, then ask
+how many extra jobs a month would cover the fee. Let them do the arithmetic out loud. Their
+number is more persuasive than yours, and it is Module 2's commitment principle doing the work.
+
+When they genuinely have no money this quarter, book a date instead of pushing. "Fair enough.
+When does the year usually pick up for you? I'll send you a fresh audit the week before that, so
+you can see what's changed." You keep the relationship and you arrive with a gift.
+
+### 4.7 No desire
+
+They understand it and are unmoved, which usually means you have been describing features. Go
+back to Module 1 and put it in their world. Not that we optimise profiles, but that someone in
+their suburb searched for their exact service last night at nine and phoned a competitor.
+
+The strongest desire lever we have is the competitor. It is specific, it is true, and it is
+personal in a way that no statistic is. Naming the rival who is above them on the map does more
+than any description of what we do.
+
+The nephew and the existing website are a desire problem wearing a loyalty coat. Never criticise
+the nephew. "Keep him, the site's fine. This is a different thing. The map pack and the AI
+answers are where the calls come from now, and that's not really website work."
+
+### 4.8 No hurry
+
+Real urgency only, per Module 2. The three honest versions:
+
+The map has three slots in each suburb, and someone will hold them. Whoever starts first holds
+them longest.
+
+Reviews compound. A competitor who begins today is a year of reviews ahead of them next year,
+and that gap does not close quickly.
+
+The AI window is open. Almost nobody in their trade has checked whether ChatGPT knows they exist,
+which is exactly why it is cheap to win now and will not be later.
+
+Then give them a small next step instead of a decision. "Let's not decide today. Let me run the
+audit, you look at where you actually rank, and if it's fine you've lost nothing." Most no hurry
+objections are no trust in disguise, and a free audit answers the real one.
+
+### 4.9 No trust
+
+The sheet says to show case studies and reviews. We have two named clients, both in gas, and no
+credentials, so a wall of proof is not available to us. Our trust assets are different ones, and
+they are stronger than they look.
+
+Say the disclaimer before they ask for a guarantee. "I'll never promise you position one, because
+anyone who does is guessing." Volunteering the limit of what you can do buys more credibility
+than any claim, and it pre-empts the guarantee question entirely.
+
+Give the audit away with no strings, and mean it. "You can take it to another agency if you
+want." A gift with a hook attached is not a gift, and burned owners test for the hook.
+
+Point at the contract terms. Month to month means the risk of being wrong about us is thirty days
+long, and the 90-day promise means we keep working free if visibility and calls have not moved.
+
+Answer the trade question honestly. "You'd be our first plumber. I'd rather say that than
+name-drop someone vague. Here's what we did for two gas businesses and why the same mechanics
+apply." The honesty is the persuasion.
+
+On "I've been burned before", do not defend the industry. Ask what happened, let them tell it,
+then separate yourself with specifics rather than adjectives: they were probably shown traffic
+graphs, on a twelve month contract, with no one to phone. We report calls, we have no contract,
+and they deal with the person who does the work.
+
+### 4.10 Prevent them instead
+
+Most objections are cheaper to prevent than to answer, and the pitch in Module 3 already does
+much of it. The disclaimer kills the guarantee objection. The free audit kills most of no trust
+and no hurry. Month to month kills a large part of no money, because the decision is thirty days
+rather than a year. Naming the competitor builds desire before anyone has to argue for it.
+
+If you are handling the same objection on every call, it is not an objection problem. Fix the
+pitch.
+
+### 4.11 Drill
+
+Take your last five calls that did not close and write which of the five objections ended each
+one. If four of them are the same category, that is your pitch telling you what it is missing. If
+you cannot classify one of them, you never found the real objection, which is itself the finding.
+
+### 4.12 Open questions for the next session
+
+- Sign off the disqualifier list in 4.5, or change it. Without an agreed bar the promise on the
+  site is decoration.
+- Would Emmanuel or Liberty take a reference call from a prospect? A five minute call with a real
+  client beats every trust technique in this module, and we have not asked either of them.
+- Is there a smaller starting package we can actually deliver profitably for the scope-down
+  answer in 4.6, or is that answer currently a bluff?

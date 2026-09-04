@@ -43,10 +43,11 @@ Two standing facts to protect:
 
 `docs/SALES-PLAYBOOK.md` is a living document for the sales course revision. Each module is
 appended, the table of contents and the "last updated" line at the bottom are updated with it.
-Modules so far: features and benefits, Cialdini's influence principles, the elevator pitch.
+Modules so far: features and benefits, Cialdini's influence principles, the elevator pitch,
+objection handling.
 
-Module 3 has had the humanizer pass. Modules 1 and 2 have not, so they still contain em dashes
-and bold-label lists.
+Modules 3 and 4 have had the humanizer pass. Modules 1 and 2 have not, so they still contain em
+dashes and bold-label lists.
 
 The five pitches in Module 3 are timed against stated word counts. Changing their wording changes
 the timings, so recount and retime whenever one is edited.
