@@ -480,17 +480,17 @@ Steps used: hook (1), introduce (2), solution (4), proof (5), CTA (8). Problem, 
 differentiation are *implied* by the hook rather than stated, which is the trade you make at this
 length.
 
-#### B. Ninety seconds (181 words, about 72 to 84 sec)
+#### B. Ninety seconds (179 words, about 72 to 83 sec)
 
 > "Can I ask you something? When did you last scroll past the map on Google to click a website
 > link? Nobody does.
 >
 > I'm Wellew, I run Clarity Clicks. We do local SEO for Johannesburg service businesses.
 >
-> Here's the problem most owners haven't clocked: 'near me' searches almost never reach the blue
-> links anymore. People pick one of the three businesses on the map, or they take whatever name
-> ChatGPT hands them. So if your profile is thin, or your competitor has more reviews, you're
-> invisible at the exact moment someone's ready to buy.
+> Most owners haven't clocked this: 'near me' searches almost never reach the blue links
+> anymore. People pick one of the three businesses on the map, or they take whatever name ChatGPT
+> hands them. So if your profile is thin, or your competitor has more reviews, you're invisible
+> at the exact moment someone's ready to buy.
 >
 > We fix the foundations Google and the AI assistants use to decide who to trust: your Business
 > Profile, your reviews, your listings, pages built around your actual suburbs.
