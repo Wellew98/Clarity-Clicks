@@ -10,6 +10,7 @@ This file grows as we work through the course. Each module gets its own section.
 
 **Modules**
 1. [Features & Benefits](#module-1--features--benefits)
+2. [Cialdini's Principles of Influence](#module-2--cialdinis-principles-of-influence)
 
 ---
 
@@ -123,4 +124,298 @@ For each of the six service features: say the feature, then "…which means you�
 
 ---
 
-*Last updated: Module 1 — Features & Benefits.*
+*Last updated: Module 2 — Cialdini's Principles of Influence.*
+
+## Module 2 — Cialdini's Principles of Influence
+
+Module 1 gave us *what to say*. Cialdini gives us *why it lands*. Every benefit in Module 1
+gets stronger when it's carried by one of these.
+
+**The rule that governs this whole module:** every principle below is a way of making a true
+thing *visible*. The moment you use one to make an untrue thing look true, it stops being
+influence and becomes a trick — and with SA small-business owners who've already been burned
+by an SEO agency, a detected trick costs the deal on the spot. Cialdini's own term for this is
+the *smuggler*: someone who manufactures the signal instead of surfacing it. We don't do that,
+and it's also our competitive edge, because half our competitors do.
+
+### 2.1 Quick map
+
+| Principle | The lever | Our single strongest asset |
+|---|---|---|
+| **Reciprocity** | Give first, unrequested, personalised | The free visibility audit |
+| **Commitment & Consistency** | Small yes → bigger yes | "Have you googled yourself?" → audit → onboarding |
+| **Social Proof** | People like me, in my situation | Red Flame & MG Gas; competitor's review count |
+| **Authority** | Credible expertise, honestly signalled | Knowing the map pack / GEO shift they don't |
+| **Liking** | Similarity, praise, cooperation | Local, boutique, SA suburbs, direct access |
+| **Scarcity** | Fear of loss > desire for gain | Calls going to a competitor *right now*; AI window still open |
+
+---
+
+### 2.2 Reciprocity — the audit is the whole strategy
+
+The free visibility audit isn't a lead magnet. It's the reciprocity engine, and it works
+because Cialdini's three conditions are all satisfiable:
+
+| Cialdini's condition | How to satisfy it |
+|---|---|
+| **Given first** — before any ask | Run the audit *before* the call where possible. Show it, then ask for nothing. |
+| **Personalised** — clearly for them | Their business name, their suburbs, their competitor by name, their review gap. Not a template with a logo swapped in. |
+| **Unexpected** | They expected a pitch. They got a document with their own numbers in it. |
+
+**Do this:** lead outreach with a finding, not an offer.
+
+> "Hi [Name] — ran a check on [Business]. You're top-3 on the map for [suburb A] but you don't
+> appear at all for [suburb B] or [suburb C], and [Competitor] has 60-odd more reviews than you.
+> That's where the 'near me' calls are going. Want me to send the full breakdown? No charge and
+> no catch — you can take it to anyone."
+
+That last clause — *you can take it to anyone* — is counterintuitive and it's the strongest line
+in the message. It proves the gift is real. Reciprocity dies the instant the gift is visibly a hook.
+
+**Don't do this:** "Book a free audit" as a naked CTA on a cold call. That's not a gift, it's a
+meeting request wearing a gift's clothes, and prospects read it correctly.
+
+**Honest limit:** a genuinely free audit costs us real time. If volume becomes a problem, shorten
+the audit, don't fake it — a two-minute personalised finding beats a ten-page generic PDF for
+reciprocity anyway.
+
+---
+
+### 2.3 Commitment & Consistency — build the staircase
+
+People act consistently with what they've already said and done. So stop asking for the big yes.
+Ask for a sequence of small ones, each of which is easy and each of which makes the next one
+natural.
+
+**The staircase, smallest step first:**
+
+1. **"Have you ever googled your own business from your phone?"** — near-universal yes, costs
+   them nothing, and it puts *them* in the position of noticing the problem.
+2. **"Try asking ChatGPT for a [service] in [suburb] — see if it names you."** A micro-task they
+   perform themselves. Self-discovered facts are held far more strongly than told facts.
+3. **"Which suburbs actually matter to you?"** — they define the target, so the target is theirs.
+4. **Accept the free audit** — small, no cost, no risk.
+5. **Sit through the audit walkthrough** — now they've invested time.
+6. **Onboarding: give access, lock services and suburbs** — the site's Step 02.
+7. **Month one.** Month-to-month means every month is a small renewed commitment rather than one
+   frightening annual one.
+
+**The mechanics that make commitments stick** (all four, from Cialdini): the commitment should be
+**active**, **public**, **effortful**, and **freely chosen**. Applied:
+
+- **Active:** get them to say the target suburbs out loud, or type them into WhatsApp. Don't
+  say them for them.
+- **Public:** the onboarding game plan shared with their partner or ops manager.
+- **Effortful:** them gathering their service list and photos is not admin friction — it's
+  commitment. Don't over-optimise it away.
+- **Freely chosen:** never pressure. A commitment made under pressure doesn't bind; it just
+  breeds resentment and churn. Our no-lock-in offer is only credible if the yes was free.
+
+**Why month-to-month is a consistency asset, not a weakness.** A rep's instinct is to want the
+12-month contract. But a contract creates compliance, not commitment — and compliance ends the
+day it lapses. Each voluntary month-to-month renewal is an active, freely-chosen commitment that
+*strengthens* their identity as a Clarity Clicks client. Say this in the room:
+
+> "No contract. Which means every month you're choosing us again. That's on us to keep earning —
+> and honestly it's the only kind of client relationship that's worth anything."
+
+---
+
+### 2.4 Social Proof — "people like me, in my situation"
+
+Cialdini's finding is specific: social proof is strongest under **uncertainty** and **similarity**.
+A local business owner deciding on SEO is maximally uncertain. So similarity is the whole game.
+
+**What we have, ranked by power for a given prospect:**
+
+1. **A direct peer** — same trade, same city. (Right now: only if they're a gas supplier.)
+2. **A near peer** — different trade, same "near me" dynamic, same province. MG Gas in Germiston
+   for any East Rand trade.
+3. **The competitor's numbers** — the most underused social proof we own. *Their rival's* 94
+   reviews is social proof aimed straight at them, and it's stronger than any testimonial because
+   it's about someone they actually resent.
+4. **The category trend** — "every service business in your suburb is going to end up doing this."
+
+**The competitor move, spelled out:**
+
+> "[Competitor] has 94 reviews. You've got 11. You've probably done more jobs than them —
+> you just never asked. That gap is why they're above you on the map, and it's the single
+> easiest thing on this list to fix."
+
+**Where we're weak, and what to say instead of bluffing.** Two named clients, both gas. A plumber
+who asks "who else have you done this for in my trade?" deserves the truth:
+
+> "You'd be our first plumber. I'd rather tell you that than name-drop someone vague. What I can
+> show you is exactly what we did for two gas businesses and why the mechanics are identical —
+> same 'near me' search, same map pack, same review problem. And you're on month-to-month, so
+> if I'm wrong you're out in thirty days."
+
+That answer uses honesty to *build* the case. A dodge would lose the deal.
+
+**Never:** invent clients, imply a roster we don't have, or use "hundreds of businesses trust us."
+Fabricated social proof is the single easiest thing for a prospect to check and the fastest way
+to end a relationship. It also makes every true claim retroactively suspect.
+
+**Build the asset:** priority is one non-gas case study — a plumber, electrician or geyser
+specialist — with the same before/after structure. Until then, we run on mechanism plus honesty.
+
+---
+
+### 2.5 Authority — expertise, honestly signalled
+
+Cialdini's practical version: authority is conveyed by **titles, trappings, and clothing** —
+but the durable form for us is **demonstrated knowledge of something they don't know**, plus
+**credible admission of limits**.
+
+**Our real authority sources:**
+
+- **Knowing the shift they haven't noticed.** Most "near me" searches never reach the blue links.
+  They pick from the three on the map, or take the name an AI hands them. Explaining that
+  clearly, in one minute, does more for authority than any credential.
+- **The GEO / AI visibility angle.** Almost nobody in this market is talking about it yet.
+  Being early is authority.
+- **The SA-specific detail that proves we're not a template agency:** Google's Local Services
+  Ads aren't available in South Africa, so here the map is won organically. That one sentence
+  tells a sharp owner we actually operate in this market.
+- **POPIA fluency.** Local regulatory competence.
+
+**The strongest authority play we have is the disclaimer.** Cialdini's *"damaging admission"* /
+trustworthiness effect: volunteering a weakness *before* it's raised makes everything you say
+afterwards more credible. We already have it in writing on the site:
+
+> "We'll never promise you a specific Google ranking. Anyone who does is guessing. We promise the
+> work, full transparency, and improvement you can see in your own numbers."
+
+Say that **early**, unprompted. It does three jobs at once: it establishes authority (you know
+enough to know what's unknowable), it inoculates against every competitor who *will* promise
+#1, and it makes the 90-day promise land as a real commitment rather than sales talk.
+
+Same move on qualification:
+
+> "If I don't think we can move the needle for you, I'll say so on this call. I'd rather lose
+> the deal than take money for work that won't land."
+
+**Honest gap:** we have no external authority signals — no certifications, published case
+studies, speaking, or press listed anywhere. Everything currently rests on demonstrated
+knowledge in the conversation. That's workable for a boutique but it's thin, and it's a real
+disadvantage against an agency with a wall of badges. Worth deciding whether to build one
+(a published Joburg local-search teardown series would do it cheaply).
+
+---
+
+### 2.6 Liking — similarity, praise, cooperation
+
+Cialdini's factors: physical attractiveness, **similarity**, **compliments**, **contact and
+cooperation**, and **conditioning/association**. Three of those are ours to use.
+
+**Similarity — our structural advantage.** The site already positions on it: *"We know SA search,
+SA suburbs, and how your customers phrase it. You work with us directly, not a junior three time
+zones away."* Make it concrete on calls: name the suburb, use the phrasing their customers
+actually use, know what a geyser callout looks like on a Sunday. Similarity that's demonstrated
+beats similarity that's claimed.
+
+**Compliments — genuine and specific.** Not flattery. Find the real thing:
+
+> "Your reviews are 4.9 across 40-odd — that's better than anyone else in your suburb. The
+> problem isn't your work, it's that fewer people are seeing it than should be."
+
+That compliment is doing structural work: it separates *their business* (good) from *their
+visibility* (the problem we fix). It removes the implicit insult in every SEO pitch.
+
+**Cooperation — same side of the table.** Frame the audit as *us versus their competitor*, not
+*us versus them*. The competitor is the opponent; we're both looking at the same scoreboard.
+Physically and verbally, sit next to the problem with them.
+
+**Association.** We attach ourselves to the phone ringing, not to dashboards, reports and jargon.
+Every mention of "traffic," "impressions," or "algorithm" associates us with the last agency that
+disappointed them. Say *calls*, *bookings*, *orders on WhatsApp*.
+
+---
+
+### 2.7 Scarcity — the honest version
+
+Scarcity is the principle most likely to blow up in our faces, because the fake version is so
+common that jaded owners are primed to detect it. "Only 2 spots left this month!" from an
+unknown agency reads as desperation, not demand.
+
+**Fake scarcity we do not use:** invented deadlines, phantom capacity limits, "price goes up
+Friday" when it doesn't.
+
+**Real scarcity we do have — and it's better:**
+
+1. **Ongoing loss, right now.** Cialdini's core insight is that loss motivates harder than
+   equivalent gain. Frame the status quo as an active, daily leak, not a missed opportunity:
+   > "This isn't about what you could gain. Every day you're not in that top three, those calls
+   > are going to [Competitor]. That's already happening — it happened yesterday and it'll
+   > happen today."
+2. **The map pack has exactly three slots.** This is genuine, structural, verifiable scarcity
+   and it's the best scarcity argument in local SEO. It is a zero-sum position. Someone will
+   hold it in their suburb.
+3. **The AI window is open and will close.** Also true, also time-limited, and unusually
+   persuasive because it's an *unexploited* opportunity — Cialdini notes newly-scarce and
+   newly-available things exert more pull than long-standing ones:
+   > "Right now hardly any [trade] in Joburg has thought about whether ChatGPT knows they exist.
+   > In two years everyone will have, and it'll cost what Google SEO costs now. This is the
+   > cheap moment."
+4. **Genuine capacity, only when it's genuinely true.** We're boutique — direct access is part
+   of the offer, so the roster is really finite. Say it only when it's factually the case:
+   > "I take on a small number of clients because you deal with me, not a junior. That's the
+   > trade-off — it's better service and it means I can't take everyone."
+
+**The compounding argument is a scarcity argument.** Local SEO foundations compound; reviews
+accumulate; a competitor who starts twelve months earlier is twelve months of reviews and
+authority ahead. Delay isn't neutral, it's expensive. Say that plainly, because it's true.
+
+---
+
+### 2.8 Where each principle belongs in the call
+
+| Stage | Lead principle | Backup |
+|---|---|---|
+| Cold outreach / DM | Reciprocity (unrequested finding) | Social proof (competitor's numbers) |
+| Opening the call | Liking (similarity, genuine compliment) | Authority (the shift they haven't noticed) |
+| Diagnosis | Commitment (small yeses, they define the target) | Social proof |
+| Presenting the gap | Scarcity (ongoing loss, 3 slots) | Social proof (peer case) |
+| Presenting the offer | Authority (the "no ranking guarantees" admission) | Reciprocity (audit already given) |
+| Handling "I've been burned" | Authority + damaging admission | Commitment (no lock-in = free choice) |
+| Close | Commitment (small next step, not a big yes) | Liking (same side of the table) |
+| Onboarding | Commitment (active, public, effortful, chosen) | — |
+
+---
+
+### 2.9 The seventh principle — Unity (and why it may be our best one)
+
+Cialdini added **Unity** in *Pre-Suasion* (2016), so it's not in the classic six, but it belongs
+in our playbook. Unity is stronger than liking: liking is "someone *like* me," unity is
+"someone who is *one of us*." Shared identity, not shared traits.
+
+For a Joburg boutique selling to SA owner-operators, that's available in a way it never is for
+an offshore agency:
+
+- Both small SA businesses trying to be found by the same customers.
+- Both dealing with load-shedding, POPIA, the Rand, the same suburbs.
+- Both people who do the work themselves rather than sub it to a junior.
+
+> "I'm running a small business in Joburg trying to get found, same as you. I just happen to
+> know this particular corner of it."
+
+Unity is also the honest frame for the whole relationship, and it's why month-to-month fits
+the brand: we're not a vendor extracting a contract, we're the same kind of operation.
+
+---
+
+### 2.10 Practice drill
+
+Take one real prospect. Write one sentence for each of the six principles, using only facts you
+can verify about that specific business. If any sentence requires a fact you don't have, that's
+not a gap in the script — it's research you haven't done yet. Then check each sentence against
+one question: *if they fact-checked this, would it hold?* Anything that wouldn't, cut.
+
+### 2.11 Open questions for the next session
+
+- Do we build one non-gas case study before pushing outreach to other trades, or run on mechanism
+  plus honest disclosure and let volume produce the case study?
+- Is there a true capacity number we can state for the boutique/scarcity line, or should we
+  drop that line entirely until there is one?
+- Authority assets: is a published Joburg local-search teardown series worth the time versus
+  more audits?
