@@ -11,7 +11,7 @@ This file grows as we work through the course. Each module gets its own section.
 **Modules**
 1. [Features & Benefits](#module-1--features--benefits)
 2. [Cialdini's Principles of Influence](#module-2--cialdinis-principles-of-influence)
-3. [The Elevator Pitch](#module-3--the-elevator-pitch)
+3. [The elevator pitch](#module-3-the-elevator-pitch)
 
 ---
 
@@ -421,56 +421,54 @@ one question: *if they fact-checked this, would it hold?* Anything that wouldn't
 - Authority assets: is a published Joburg local-search teardown series worth the time versus
   more audits?
 
-## Module 3 — The Elevator Pitch
+## Module 3: The elevator pitch
 
-Course source: *Elevator Pitch Support* handout — nine steps, 30 seconds to 2 minutes.
-This module keeps the nine steps, fixes the one thing the handout gets wrong about them,
-and writes the actual Clarity Clicks pitches.
+Course source: the *Elevator Pitch Support* handout, nine steps, 30 seconds to 2 minutes.
+This module keeps the nine steps, corrects one thing the handout gets wrong about them, and
+writes the actual Clarity Clicks pitches.
 
 ### 3.1 The course's nine steps
 
-1. **Hook** — attention-grabbing opening
-2. **Introduce** yourself / the idea
-3. **Problem** — the pain point
-4. **Solution / value proposition**
-5. **Proof or credibility**
-6. **Target audience**
-7. **Differentiation**
-8. **Call to action**
-9. **Practice and refine** — time it, adjust on feedback
+1. Hook, an attention-grabbing opening
+2. Introduce yourself or the idea
+3. Problem, the pain point
+4. Solution or value proposition
+5. Proof or credibility
+6. Target audience
+7. Differentiation
+8. Call to action
+9. Practice and refine, time it and adjust on feedback
 
 ### 3.2 The correction: nine steps do not fit in thirty seconds
 
-Take this seriously before writing anything. Thirty seconds of natural speech is roughly
-65–80 words. Nine distinct elements in 75 words gives each one about eight words. The result
-is a list, not a pitch — and it's the single most common reason a rehearsed pitch dies in the
-room.
+Thirty seconds of natural speech is roughly 65 to 80 words. Nine distinct elements in 75 words
+gives each one about eight words, and what comes out is a list rather than a pitch. That is the
+most common reason a rehearsed pitch dies in the room.
 
-So treat the nine steps as a **checklist for the two-minute version, and a menu for the short
-one**. The handout's own worked example proves the point: read the LingoMaster pitch again and
-you'll find it quietly merges steps and skips one entirely. That's not a flaw in the example,
-it's how short pitches actually work.
+So treat the nine steps as a checklist for the two-minute version and a menu for the short one.
+The handout's own worked example does exactly this. Read the LingoMaster pitch again and you'll
+see it merges steps and skips one entirely, which is how short pitches work.
 
-**What survives the cut at each length:**
+What survives the cut at each length:
 
 | Length | Words | Keep |
 |---|---|---|
-| ~10 sec | ~25 | Solution + benefit. One sentence. |
-| ~30 sec | ~75 | Hook, who you are, solution-as-benefit, one proof point, CTA |
-| ~90 sec | ~180 | All nine, properly |
+| 10 sec | ~25 | Solution and benefit, one sentence |
+| 30 sec | ~75 | Hook, who you are, solution as benefit, one proof point, CTA |
+| 90 sec | ~180 | All nine, properly |
 
-Everything in this module has been counted and timed at a normal speaking pace of 130–150
-words per minute. Use those numbers rather than trusting your own sense of elapsed time,
-which is unreliable when you're nervous.
+Everything below has been counted and timed at a normal speaking pace of 130 to 150 words per
+minute. Use those numbers rather than your own sense of elapsed time, which goes unreliable when
+you're nervous.
 
-**Second correction — proof.** The handout's example says *"our users have seen a 30% faster
-learning rate."* It's a fictional sample so the number is invented, and that's a habit worth
-naming: step 5 is where pitches start lying. Ours uses only what Module 1 verified —
-Red Flame's ~5 customers a day, and the fact that it's one client's number, not an average.
+A second correction, about proof. The handout's example claims *"our users have seen a 30% faster
+learning rate."* It's a fictional sample so the number is invented, and the habit is worth
+naming: step 5 is where pitches start lying. Ours uses only what Module 1 verified, which is Red
+Flame's five customers a day, and the fact that it's one client's number rather than an average.
 
 ### 3.3 The pitches
 
-#### A. Thirty seconds — 79 words, ~32–36 sec
+#### A. Thirty seconds (79 words, about 32 to 36 sec)
 
 > "You know how when your geyser bursts you just search 'plumber near me' and phone one of the
 > three on the map? I'm Wellew from Clarity Clicks. We get Joburg service businesses into those
@@ -479,9 +477,10 @@ Red Flame's ~5 customers a day, and the fact that it's one client's number, not 
 > exactly where you're losing calls. Can I run yours?"
 
 Steps used: hook (1), introduce (2), solution (4), proof (5), CTA (8). Problem, audience and
-differentiation are *implied* by the hook rather than stated — that's the trade at this length.
+differentiation are *implied* by the hook rather than stated, which is the trade you make at this
+length.
 
-#### B. Ninety seconds — 181 words, ~72–84 sec
+#### B. Ninety seconds (181 words, about 72 to 84 sec)
 
 > "Can I ask you something? When did you last scroll past the map on Google to click a website
 > link? Nobody does.
@@ -508,30 +507,30 @@ differentiation are *implied* by the hook rather than stated — that's the trad
 All nine steps, in the handout's order, with differentiation carried by the no-lock-in and
 no-guarantees lines.
 
-#### C. Ten seconds — 24 words, ~10–11 sec
+#### C. Ten seconds (24 words, about 10 to 11 sec)
 
 For "so what do you do?" at a braai or a networking table.
 
 > "I get Joburg service businesses to the top of Google Maps, so the next 'near me' call comes
 > to them instead of their competitor."
 
-Stop there. Let them ask the next question — if they do, they've opted in, and you're in a
-conversation instead of a monologue.
+Then stop, and let them ask the next question. If they ask, they've opted in, and you're in a
+conversation rather than delivering a monologue.
 
-#### D. Referral version — 59 words, ~24–27 sec
+#### D. Referral version (59 words, about 24 to 27 sec)
 
-Aimed at someone who isn't the buyer but knows buyers. The job here is to make you *easy to
-refer*, which means naming the trigger they should listen for.
+Aimed at someone who isn't the buyer but knows buyers. The job is to make yourself easy to refer,
+which means naming the trigger they should listen for.
 
 > "I'm Wellew from Clarity Clicks. If you know any plumbers, electricians or gas guys in Joburg
 > who complain the phone isn't ringing, that's my whole business. I get them into the top three
 > on Google Maps and into ChatGPT's answers. First thing I do is a free audit, so there's nothing
 > for them to lose by talking to me."
 
-#### E. WhatsApp / voice note — 83 words, ~33–38 sec
+#### E. WhatsApp or voice note (83 words, about 33 to 38 sec)
 
-The written pitch is a different instrument: no tone, no eye contact, and they can stop reading
-at any line. So the personalised finding goes first, before the introduction.
+Writing takes away your tone and your eye contact, and the reader can stop at any line. So the
+personalised finding goes first, before you introduce yourself.
 
 > "Hi [Name], Wellew from Clarity Clicks. I had a quick look at [Business] this morning. You're
 > showing up on the map for [Suburb A], but nothing for [Suburb B] or [Suburb C], and
@@ -541,76 +540,82 @@ at any line. So the personalised finding goes first, before the introduction.
 
 ### 3.4 Why these are built the way they are
 
-Connecting back to Modules 1 and 2 — the pitch isn't a separate skill, it's the compressed form
-of everything already decided.
+The pitch is the compressed form of everything Modules 1 and 2 already settled.
 
-- **The hook is a question they answer for themselves.** "When did you last scroll past the map?"
-  is Module 2's commitment staircase, step one. A self-supplied answer binds harder than a told
-  fact, and it converts the pitch from a broadcast into a conversation before you've said what
-  you do.
-- **Step 4 is stated as benefit, never feature** (Module 1). Not "we optimise Google Business
-  Profiles" — "we get you into those three spots."
-- **Step 5 uses one proof point, not three.** A single concrete number is more credible than a
-  stack, and a stack sounds like a brochure.
-- **Step 7, differentiation, is carried by the disclaimer.** "I'll never promise you position
-  one, because anyone who does is guessing" is Module 2's damaging admission doing double duty:
-  it differentiates *and* it buys authority, in fourteen words. It is the highest-value sentence
-  in the whole pitch and it's the one most likely to get cut for time. Don't cut it.
-- **Step 8's CTA asks for the audit, not the sale.** Small, free, easy yes. Selling the meeting,
-  not the retainer.
-- **Every CTA ends as a question.** It hands them the floor and it's the difference between a
-  pitch and a speech.
+The hook is a question they answer for themselves. "When did you last scroll past the map?" is
+step one of Module 2's commitment staircase. An answer they supply binds harder than a fact you
+tell them, and it turns the pitch into a conversation before you've said what you do.
+
+Step 4 states a benefit rather than a feature, per Module 1. So "we get you into those three
+spots" instead of "we optimise Google Business Profiles."
+
+Step 5 uses one proof point. A single concrete number is more credible than a stack of them, and
+a stack sounds like a brochure.
+
+Step 7, differentiation, is carried by the disclaimer. "I'll never promise you position one,
+because anyone who does is guessing" is Module 2's damaging admission doing two jobs in fourteen
+words: it separates you from every competitor who will promise it, and it buys authority. It's
+the most valuable sentence in the pitch and the one you'll be tempted to cut when you're running
+long. Keep it.
+
+Step 8 asks for the audit rather than the sale. You're selling the meeting, and the audit is free
+and easy to say yes to.
+
+Every CTA ends as a question, which hands them the floor. Without it you've given a speech.
 
 ### 3.5 What we deliberately leave out
 
-- **Our own credentials.** We don't have external ones (Module 2.5). Authority comes from the
-  insight about the map pack, delivered clearly. Don't manufacture a credential to fill step 5.
-- **The word "SEO"** in the first fifteen seconds, unless they say it first. For an owner who's
-  been burned, "SEO" triggers a script they've already rejected. Describe the outcome; let them
-  supply the label.
-- **Jargon:** GEO, GBP, citations, NAP, SERP, algorithm. All internal vocabulary. "Get named
-  when someone asks ChatGPT" beats "generative engine optimisation," always.
-- **Naming both case studies.** One proof point. Two sounds like you're reaching.
+Our own credentials, because we don't have external ones (Module 2.5). Authority comes from
+explaining the map pack clearly. Don't manufacture a credential to fill step 5.
 
-### 3.6 Adapting the hook — same pitch, different trade
+The word "SEO" in the first fifteen seconds, unless they say it first. For an owner who's been
+burned, it triggers a script they've already rejected. Describe the outcome and let them supply
+the label.
 
-Only the first sentence changes. Everything after it is fixed.
+Jargon: GEO, GBP, citations, NAP, SERP, algorithm. That's all internal vocabulary. "Get named
+when someone asks ChatGPT" beats "generative engine optimisation" every time.
+
+The second case study. One proof point sounds confident. Two sounds like you're reaching.
+
+### 3.6 Adapting the hook for different trades
+
+Only the first sentence changes. Everything after it stays fixed.
 
 | Prospect | Hook |
 |---|---|
 | Plumber | "You know how when a geyser bursts nobody phones around, they just tap the first plumber on the map?" |
 | Electrician | "When the power trips at 8pm, people search 'electrician near me' and call one of three. Are you one of them?" |
 | Locksmith | "Someone locked out of their car at 11pm isn't comparing websites. They're phoning whoever's on the map." |
-| Auto / towing | "Ever wondered how the tow truck gets there first? They're not better, they're just first on the map." |
+| Auto or towing | "Ever wondered how the tow truck gets there first? They're not better, they're just first on the map." |
 | Clinic | "When a parent needs a doctor on a Sunday, they search and they call. Do they find you or the practice down the road?" |
 | Gas supplier | "When someone runs out of gas mid-braai, they search 'gas near me' and phone the top result. That's a decision made in eleven seconds." |
 
-### 3.7 Delivery — step 9, done properly
+### 3.7 Delivery, step 9
 
-The handout says "practice and time it." Concretely:
+The handout says to practise and time it. In practice that means six things.
 
-1. **Record it on your phone and listen back.** Painful, and it is the fastest correction
-   available. You'll hear the filler and the rushing immediately.
-2. **Time it against the numbers above.** If the 30-second version is running 50 seconds, you
-   added something — find it and cut it.
-3. **Slow the hook down, speed nothing up.** Nerves compress the opening, which is the one part
+1. Record it on your phone and listen back. It's painful and it's the fastest correction
+   available, because you'll hear the filler and the rushing straight away.
+2. Time it against the numbers above. If the 30-second version runs 50 seconds, you added
+   something. Find it and cut it.
+3. Slow the hook down and speed nothing up. Nerves compress the opening, which is the one part
    that has to land.
-4. **Memorise the structure, not the words.** A recited pitch sounds recited. Know the five
+4. Memorise the structure rather than the words. A recited pitch sounds recited. Know the five
    beats and let the sentences vary.
-5. **Stop talking after the CTA.** The silence is doing work. Whoever speaks first concedes.
-6. **Track what they ask next.** The question you get most often is the thing your pitch isn't
-   answering. That's your revision brief, and it beats any amount of rehearsal.
+5. Stop talking after the CTA. The silence is doing work, and whoever speaks first concedes.
+6. Track what they ask next. Whatever question you get most often is the thing your pitch isn't
+   answering, and that tells you what to revise better than any amount of rehearsal.
 
 ### 3.8 Drill
 
-Say version C to someone who doesn't know what you do, and ask them to explain your business
-back to you. If they say "SEO" or "marketing," the pitch failed. If they say something like
+Say version C to someone who doesn't know what you do, then ask them to explain your business
+back to you. If they say "SEO" or "marketing," the pitch failed. If they say something closer to
 "you get businesses on the map so they get more calls," it worked.
 
 ### 3.9 Open questions for the next session
 
 - Do we build a trade-specific hook library beyond the six above, or keep it to the trades we
   can actually service well?
-- Is the 90-second version ever used in practice, or is the real sequence C → A → conversation?
-  Worth tracking on live calls before investing more rehearsal in B.
+- Does the 90-second version ever get used, or is the real sequence C, then A, then conversation?
+  Worth tracking on live calls before putting more rehearsal into B.
 - The referral pitch (D) implies a referral channel we haven't built. Is that a workstream?
